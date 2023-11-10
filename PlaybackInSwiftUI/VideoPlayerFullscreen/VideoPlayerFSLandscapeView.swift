@@ -19,13 +19,13 @@ struct VideoPlayerFSLandscapeView: View {
                 .edgesIgnoringSafeArea(.all)
                 .onAppear {
                     // autoplay
-                    orientationOnAppear = AppDelegate.orientationLock
-                    AppDelegate.orientationLock = .landscapeRight
+                    orientationOnAppear = AppDelegate.orientation
+                    AppDelegate.orientation = .landscape
                     player.play()
                 }
-                .onDisappear{
+                .onDisappear {
+                    AppDelegate.orientation = orientationOnAppear
                     player.pause()
-                    AppDelegate.orientationLock = orientationOnAppear
                 }
         }
     }

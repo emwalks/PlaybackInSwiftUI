@@ -15,6 +15,7 @@ struct AVPlayerVCView: UIViewControllerRepresentable {
     
     func makeUIViewController(context: Context) -> AVPlayerViewController {
         let controller = AVPlayerViewController()
+        controller.modalPresentationStyle = .fullScreen
         controller.player = player
         return controller
     }
