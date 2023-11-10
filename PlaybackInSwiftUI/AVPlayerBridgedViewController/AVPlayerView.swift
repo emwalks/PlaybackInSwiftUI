@@ -1,5 +1,5 @@
 //
-//  AVPlayerVCView.swift
+//  AVPlayerView.swift
 //  PlaybackInSwiftUI
 //
 //  Created by Emma Walker - TVandMobile Platforms - Core Engineering on 10/11/2023.
@@ -16,10 +16,15 @@ import AVKit
 
 struct AVPlayerView: UIViewControllerRepresentable {
     let player: AVPlayer?
+    var portraitMode = false
     
     func makeUIViewController(context: Context) -> AVPlayerViewController {
         let controller = AVPlayerViewController()
         controller.modalPresentationStyle = .fullScreen
+        if portraitMode {
+            // Vertical View - can't access on VideoPlayer :(
+            controller.videoGravity = .resizeAspectFill
+        }
         controller.player = player
         controller.allowsPictureInPicturePlayback = true
         controller.canStartPictureInPictureAutomaticallyFromInline = true

@@ -48,6 +48,25 @@ https://www.kodeco.com/24247382-picture-in-picture-across-all-platforms
 
 https://www.kodeco.com/books/swiftui-cookbook/v1.0/chapters/4-playing-audio-video-in-the-background-in-swiftui
 
+https://medium.com/free-code-camp/how-to-set-up-video-streaming-in-your-app-with-avplayer-7dc21bb82f3
+
+https://ottverse.com/free-hls-m3u8-test-urls/
+
+
+Hello,
+
+I would share an HLS stream having :
+. 6 video qualities for Adaptive Bitrate
+. 2 alternate audio tracks (English and French)
+. 3 alternate subtitle tracks (English, English with audio description and French)
+
+This movie works pretty well on any iOS devices and with Mac OS X operating systems. I think you could be interested in to check your developments or to test the capabilities of your favourite video player.
+
+Here is this HLS link :
+http://sample.vodobox.com/planete_interdite/planete_interdite_alternate.m3u8
+
+https://git-lfs.com/
+
 ## Supporting PiP
 
 https://www.kodeco.com/24247382-picture-in-picture-across-all-platforms
@@ -77,3 +96,11 @@ In full screen VC
         return controller
 
  Additionally, you’ll need to run this app on a physical device to test background playback
+
+## Hook into Native Experience
+
+- Control Center 
+- Lock Screen
+- Metadata etc
+
+https://developer.apple.com/videos/play/wwdc2022/10147/

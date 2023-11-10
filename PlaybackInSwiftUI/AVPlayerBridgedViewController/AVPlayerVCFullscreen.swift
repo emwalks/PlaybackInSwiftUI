@@ -12,7 +12,8 @@ import AVKit
 
 struct AVPlayerVCFullscreen: View {
     
-    @State var player = AVPlayer(url: Bundle.main.url(forResource: "FrontFlip", withExtension: "mp4")!)
+    // Live Akamai m3u8 HLS stream
+    @State var player = AVPlayer(url: URL(string: "https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8")!)
     
     var body: some View {
         AVPlayerView(player: player)

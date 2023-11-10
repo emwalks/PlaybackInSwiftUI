@@ -26,6 +26,9 @@ struct ContentView: View {
                         NavigationLink("AVPlayer VC Fullscreen",
                                        destination: AVPlayerVCFullscreen())
                         .padding()
+                        NavigationLink("AVPlayer Portrait",
+                                       destination: AVPlayerFSPortrait())
+                        .padding()
                         
                     }
                     .padding()

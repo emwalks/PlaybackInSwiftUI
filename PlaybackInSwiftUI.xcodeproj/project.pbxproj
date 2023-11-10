@@ -23,6 +23,7 @@
 		988FAFB72AFEB4B7007EEDA8 /* AVPlayerVCFullscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAFB62AFEB4B7007EEDA8 /* AVPlayerVCFullscreen.swift */; };
 		988FAFBA2AFEB901007EEDA8 /* FrontFlip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 988FAFB92AFEB5FA007EEDA8 /* FrontFlip.mp4 */; };
 		988FAFBD2AFEBD6D007EEDA8 /* VideoPlayerPortraitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAFBC2AFEBD6D007EEDA8 /* VideoPlayerPortraitView.swift */; };
+		98C6E80B2AFEEB800053DB96 /* AVPlayerFSPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C6E80A2AFEEB800053DB96 /* AVPlayerFSPortrait.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		988FAFB62AFEB4B7007EEDA8 /* AVPlayerVCFullscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerVCFullscreen.swift; sourceTree = "<group>"; };
 		988FAFB92AFEB5FA007EEDA8 /* FrontFlip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FrontFlip.mp4; sourceTree = "<group>"; };
 		988FAFBC2AFEBD6D007EEDA8 /* VideoPlayerPortraitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerPortraitView.swift; sourceTree = "<group>"; };
+		98C6E80A2AFEEB800053DB96 /* AVPlayerFSPortrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerFSPortrait.swift; sourceTree = "<group>"; };
 		98E710512AFEC515007179BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,6 +188,7 @@
 			children = (
 				988FAFB42AFEB39F007EEDA8 /* AVPlayerView.swift */,
 				988FAFB62AFEB4B7007EEDA8 /* AVPlayerVCFullscreen.swift */,
+				98C6E80A2AFEEB800053DB96 /* AVPlayerFSPortrait.swift */,
 			);
 			path = AVPlayerBridgedViewController;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				988FAFBD2AFEBD6D007EEDA8 /* VideoPlayerPortraitView.swift in Sources */,
 				988FAFAE2AFE8044007EEDA8 /* VideoPlayerFSLandscapeView.swift in Sources */,
 				988FAFB72AFEB4B7007EEDA8 /* AVPlayerVCFullscreen.swift in Sources */,
+				98C6E80B2AFEEB800053DB96 /* AVPlayerFSPortrait.swift in Sources */,
 				988FAF3F2AFE33B7007EEDA8 /* PlaybackInSwiftUIApp.swift in Sources */,
 				988FAFB52AFEB39F007EEDA8 /* AVPlayerView.swift in Sources */,
 			);

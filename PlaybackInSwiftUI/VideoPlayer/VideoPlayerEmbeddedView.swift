@@ -42,7 +42,7 @@ struct VideoPlayerEmbeddedView: View {
                 Button {
                     player.seek(to: .zero)
                 } label: {
-                    Image(systemName: "backward.end.circle.fill")
+                    Image(systemName: "backward.end.fill")
                         .padding()
                 }
                 Button {
