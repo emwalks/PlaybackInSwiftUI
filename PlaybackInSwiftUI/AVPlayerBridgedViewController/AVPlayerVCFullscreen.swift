@@ -9,6 +9,7 @@ import SwiftUI
 import AVKit
 
 // https://www.hackingwithswift.com/quick-start/swiftui/how-to-present-a-full-screen-modal-view-using-fullscreencover
+// https://stackoverflow.com/questions/13145048/hls-avplayer-on-ios-return-to-live
 
 struct AVPlayerVCFullscreen: View {
     
@@ -20,6 +21,13 @@ struct AVPlayerVCFullscreen: View {
             .edgesIgnoringSafeArea(.all)
             .onAppear {
                 player.play()
+                // seek to live edge
+                guard let seekableRange = player.currentItem?.seekableTimeRanges.last as? CMTimeRange else {
+                     return
+                 }
+                let livePosition = CMTimeRangeGetEnd(seekableRange)
+                player.seek(to: livePosition)
+                
             }
             .onDisappear{
                 player.pause()
