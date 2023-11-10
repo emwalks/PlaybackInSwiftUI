@@ -18,6 +18,9 @@ struct ContentView: View {
                     VStack {
                         NavigationLink("VideoPlayer Fullscreen",
                                        destination: VideoPlayerFullscreenView())
+                        .padding()
+                        NavigationLink("VideoPlayer Embedded",
+                                       destination: VideoPlayerEmbeddedView())
                     }
                     .padding()
                     .frame(width: geometry.size.width)  // Make the scroll view full-width
