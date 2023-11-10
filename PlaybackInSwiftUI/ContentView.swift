@@ -21,6 +21,7 @@ struct ContentView: View {
                         .padding()
                         NavigationLink("VideoPlayer Embedded",
                                        destination: VideoPlayerEmbeddedView())
+                        .padding()
                     }
                     .padding()
                     .frame(width: geometry.size.width)  // Make the scroll view full-width
