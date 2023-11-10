@@ -17,6 +17,7 @@
 		988FAFA42AFE3858007EEDA8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988FAFA32AFE3858007EEDA8 /* Launch Screen.storyboard */; };
 		988FAFA72AFE5491007EEDA8 /* VideoPlayerFullscreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAFA62AFE5491007EEDA8 /* VideoPlayerFullscreenView.swift */; };
 		988FAFAA2AFE5CAD007EEDA8 /* VideoPlayerEmbeddedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAFA92AFE5CAD007EEDA8 /* VideoPlayerEmbeddedView.swift */; };
+		988FAFAE2AFE8044007EEDA8 /* VideoPlayerFSLandscapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAFAD2AFE8044007EEDA8 /* VideoPlayerFSLandscapeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		988FAFA62AFE5491007EEDA8 /* VideoPlayerFullscreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerFullscreenView.swift; sourceTree = "<group>"; };
 		988FAFA92AFE5CAD007EEDA8 /* VideoPlayerEmbeddedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerEmbeddedView.swift; sourceTree = "<group>"; };
 		988FAFAC2AFE7F13007EEDA8 /* DevNotes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DevNotes.md; sourceTree = "<group>"; };
+		988FAFAD2AFE8044007EEDA8 /* VideoPlayerFSLandscapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerFSLandscapeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				988FAFA62AFE5491007EEDA8 /* VideoPlayerFullscreenView.swift */,
+				988FAFAD2AFE8044007EEDA8 /* VideoPlayerFSLandscapeView.swift */,
 			);
 			path = VideoPlayerFullscreen;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				988FAFA72AFE5491007EEDA8 /* VideoPlayerFullscreenView.swift in Sources */,
 				988FAFAA2AFE5CAD007EEDA8 /* VideoPlayerEmbeddedView.swift in Sources */,
 				988FAF412AFE33B7007EEDA8 /* ContentView.swift in Sources */,
+				988FAFAE2AFE8044007EEDA8 /* VideoPlayerFSLandscapeView.swift in Sources */,
 				988FAF3F2AFE33B7007EEDA8 /* PlaybackInSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

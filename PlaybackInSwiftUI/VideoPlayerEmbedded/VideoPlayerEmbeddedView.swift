@@ -32,7 +32,8 @@ struct VideoPlayerEmbeddedView: View {
                 .frame(width: 320, height: 180, alignment: .center)
                 .cornerRadius(8)
                 .overlay(
-                    RoundedRectangle(cornerRadius: 8, style: RoundedCornerStyle.continuous)
+                    RoundedRectangle(cornerRadius: 8,
+                                     style: RoundedCornerStyle.continuous)
                         .stroke(.blue, lineWidth: 1))
                 .onDisappear{
                     player.pause()
