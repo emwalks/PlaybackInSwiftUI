@@ -16,6 +16,7 @@ struct VideoPlayerFullscreenView: View {
             VideoPlayer(player: player)
                 .edgesIgnoringSafeArea(.all)
                 .onAppear {
+                    // autoplay
                     player.play()
                 }
                 .onDisappear{

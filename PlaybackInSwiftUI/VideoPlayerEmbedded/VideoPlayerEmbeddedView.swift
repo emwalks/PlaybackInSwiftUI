@@ -17,6 +17,9 @@ struct VideoPlayerEmbeddedView: View {
             VStack {
                 VideoPlayer(player: player)
                     .frame(width: 320, height: 180, alignment: .center)
+                    .onDisappear{
+                        player.pause()
+                    }
                 HStack {
                     Button {
                         player.seek(to: .zero)
@@ -25,6 +28,9 @@ struct VideoPlayerEmbeddedView: View {
                             .padding()
                     }
                     Button {
+                        // CTA based play
+                        // note the button icon won't update based on the additional user control!! 
+                        // can you add a listener to the player?
                         isPlaying ? player.pause() : player.play()
                         isPlaying.toggle()
                     } label: {
