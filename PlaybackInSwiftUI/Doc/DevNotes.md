@@ -4,6 +4,9 @@
 // TODO: - Check all lock screen / control center interactions VideoPlayer
 // TODO: - Check all lock screen / control center interactions VideoPlayer
 
+// TODO:  fix warning
+UIViewController.attemptRotationToDeviceOrientation()
+
 ## Links
 
 https://developer.apple.com/streaming/examples/
