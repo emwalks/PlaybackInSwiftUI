@@ -10,7 +10,7 @@ import AVKit
 
 /*
  This is a very basic example of:
- - An fullscreen player
+ - A fullscreen player
  - With additional user controls (restart)
  - Playing HLS stream video
  - Autoplay on appear
