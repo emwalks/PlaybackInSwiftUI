@@ -9,8 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var show = false
-    
     var body: some View {
         NavigationView {
             GeometryReader { geometry in // get the geometry
@@ -21,6 +19,9 @@ struct ContentView: View {
                         .padding()
                         NavigationLink("VideoPlayer Embedded",
                                        destination: VideoPlayerEmbeddedView())
+                        .padding()
+                        NavigationLink("VideoPlayer FS Landscape",
+                                       destination: VideoPlayerFSLandscapeView())
                         .padding()
                     }
                     .padding()
