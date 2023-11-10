@@ -14,6 +14,7 @@
 		988FAF502AFE33B9007EEDA8 /* PlaybackInSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAF4F2AFE33B9007EEDA8 /* PlaybackInSwiftUITests.swift */; };
 		988FAF5A2AFE33B9007EEDA8 /* PlaybackInSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAF592AFE33B9007EEDA8 /* PlaybackInSwiftUIUITests.swift */; };
 		988FAF5C2AFE33B9007EEDA8 /* PlaybackInSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAF5B2AFE33B9007EEDA8 /* PlaybackInSwiftUIUITestsLaunchTests.swift */; };
+		988FAFA42AFE3858007EEDA8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988FAFA32AFE3858007EEDA8 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		988FAF552AFE33B9007EEDA8 /* PlaybackInSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaybackInSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		988FAF592AFE33B9007EEDA8 /* PlaybackInSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackInSwiftUIUITests.swift; sourceTree = "<group>"; };
 		988FAF5B2AFE33B9007EEDA8 /* PlaybackInSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackInSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		988FAFA32AFE3858007EEDA8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +98,7 @@
 			children = (
 				988FAF3E2AFE33B7007EEDA8 /* PlaybackInSwiftUIApp.swift */,
 				988FAF402AFE33B7007EEDA8 /* ContentView.swift */,
-				988FAF422AFE33B9007EEDA8 /* Assets.xcassets */,
-				988FAF442AFE33B9007EEDA8 /* Preview Content */,
+				988FAFA22AFE3838007EEDA8 /* Utils */,
 			);
 			path = PlaybackInSwiftUI;
 			sourceTree = "<group>";
@@ -125,6 +126,16 @@
 				988FAF5B2AFE33B9007EEDA8 /* PlaybackInSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = PlaybackInSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		988FAFA22AFE3838007EEDA8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				988FAF422AFE33B9007EEDA8 /* Assets.xcassets */,
+				988FAFA32AFE3858007EEDA8 /* Launch Screen.storyboard */,
+				988FAF442AFE33B9007EEDA8 /* Preview Content */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988FAFA42AFE3858007EEDA8 /* Launch Screen.storyboard in Resources */,
 				988FAF462AFE33B9007EEDA8 /* Preview Assets.xcassets in Resources */,
 				988FAF432AFE33B9007EEDA8 /* Assets.xcassets in Resources */,
 			);
@@ -416,13 +428,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PlaybackInSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PlaybackInSwiftUI/Utils/Preview Content\"";
 				DEVELOPMENT_TEAM = Q3USALQAVD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -445,13 +458,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PlaybackInSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PlaybackInSwiftUI/Utils/Preview Content\"";
 				DEVELOPMENT_TEAM = Q3USALQAVD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
