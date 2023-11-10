@@ -11,7 +11,7 @@ import AVKit
 struct AVPlayerFSPortrait: View {
         
     // loading a local item from bundle
-    @State var player = AVPlayer(url: Bundle.main.url(forResource: "FrontFlip", withExtension: "mp4")!)
+    @State var player = AVPlayer(url: Bundle.main.url(forResource: "JebbersPortrait", withExtension: "mp4")!)
     
     var body: some View {
         AVPlayerView(player: player, portraitMode: true)

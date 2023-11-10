@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9874F0722AFEEE5800942D78 /* JebbersPortrait.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9874F0712AFEEE1600942D78 /* JebbersPortrait.mp4 */; };
 		988FAF3F2AFE33B7007EEDA8 /* PlaybackInSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAF3E2AFE33B7007EEDA8 /* PlaybackInSwiftUIApp.swift */; };
 		988FAF412AFE33B7007EEDA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAF402AFE33B7007EEDA8 /* ContentView.swift */; };
 		988FAF432AFE33B9007EEDA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988FAF422AFE33B9007EEDA8 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9874F0712AFEEE1600942D78 /* JebbersPortrait.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = JebbersPortrait.mp4; sourceTree = "<group>"; };
 		988FAF3B2AFE33B7007EEDA8 /* PlaybackInSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaybackInSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		988FAF3E2AFE33B7007EEDA8 /* PlaybackInSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackInSwiftUIApp.swift; sourceTree = "<group>"; };
 		988FAF402AFE33B7007EEDA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		988FAFB82AFEB5E5007EEDA8 /* Local Media */ = {
 			isa = PBXGroup;
 			children = (
+				9874F0712AFEEE1600942D78 /* JebbersPortrait.mp4 */,
 				988FAFB92AFEB5FA007EEDA8 /* FrontFlip.mp4 */,
 			);
 			path = "Local Media";
@@ -305,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9874F0722AFEEE5800942D78 /* JebbersPortrait.mp4 in Resources */,
 				988FAFBA2AFEB901007EEDA8 /* FrontFlip.mp4 in Resources */,
 				988FAFA42AFE3858007EEDA8 /* Launch Screen.storyboard in Resources */,
 				988FAF462AFE33B9007EEDA8 /* Preview Assets.xcassets in Resources */,
