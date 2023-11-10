@@ -14,7 +14,7 @@ import AVKit
 
 // https://developer.apple.com/documentation/avkit/adopting_picture_in_picture_in_a_standard_player
 
-struct AVPlayerVCView: UIViewControllerRepresentable {
+struct AVPlayerView: UIViewControllerRepresentable {
     let player: AVPlayer?
     
     func makeUIViewController(context: Context) -> AVPlayerViewController {

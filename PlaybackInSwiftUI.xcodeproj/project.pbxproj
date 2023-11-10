@@ -19,7 +19,7 @@
 		988FAFAA2AFE5CAD007EEDA8 /* VideoPlayerEmbeddedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAFA92AFE5CAD007EEDA8 /* VideoPlayerEmbeddedView.swift */; };
 		988FAFAE2AFE8044007EEDA8 /* VideoPlayerFSLandscapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAFAD2AFE8044007EEDA8 /* VideoPlayerFSLandscapeView.swift */; };
 		988FAFB02AFE85F3007EEDA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAFAF2AFE85F3007EEDA8 /* AppDelegate.swift */; };
-		988FAFB52AFEB39F007EEDA8 /* AVPlayerVCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAFB42AFEB39F007EEDA8 /* AVPlayerVCView.swift */; };
+		988FAFB52AFEB39F007EEDA8 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAFB42AFEB39F007EEDA8 /* AVPlayerView.swift */; };
 		988FAFB72AFEB4B7007EEDA8 /* AVPlayerVCFullscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAFB62AFEB4B7007EEDA8 /* AVPlayerVCFullscreen.swift */; };
 		988FAFBA2AFEB901007EEDA8 /* FrontFlip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 988FAFB92AFEB5FA007EEDA8 /* FrontFlip.mp4 */; };
 		988FAFBD2AFEBD6D007EEDA8 /* VideoPlayerPortraitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAFBC2AFEBD6D007EEDA8 /* VideoPlayerPortraitView.swift */; };
@@ -59,7 +59,7 @@
 		988FAFAC2AFE7F13007EEDA8 /* DevNotes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DevNotes.md; sourceTree = "<group>"; };
 		988FAFAD2AFE8044007EEDA8 /* VideoPlayerFSLandscapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerFSLandscapeView.swift; sourceTree = "<group>"; };
 		988FAFAF2AFE85F3007EEDA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		988FAFB42AFEB39F007EEDA8 /* AVPlayerVCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerVCView.swift; sourceTree = "<group>"; };
+		988FAFB42AFEB39F007EEDA8 /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
 		988FAFB62AFEB4B7007EEDA8 /* AVPlayerVCFullscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerVCFullscreen.swift; sourceTree = "<group>"; };
 		988FAFB92AFEB5FA007EEDA8 /* FrontFlip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FrontFlip.mp4; sourceTree = "<group>"; };
 		988FAFBC2AFEBD6D007EEDA8 /* VideoPlayerPortraitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerPortraitView.swift; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 		988FAFB12AFEAC10007EEDA8 /* AVPlayerBridgedViewController */ = {
 			isa = PBXGroup;
 			children = (
-				988FAFB42AFEB39F007EEDA8 /* AVPlayerVCView.swift */,
+				988FAFB42AFEB39F007EEDA8 /* AVPlayerView.swift */,
 				988FAFB62AFEB4B7007EEDA8 /* AVPlayerVCFullscreen.swift */,
 			);
 			path = AVPlayerBridgedViewController;
@@ -338,7 +338,7 @@
 				988FAFAE2AFE8044007EEDA8 /* VideoPlayerFSLandscapeView.swift in Sources */,
 				988FAFB72AFEB4B7007EEDA8 /* AVPlayerVCFullscreen.swift in Sources */,
 				988FAF3F2AFE33B7007EEDA8 /* PlaybackInSwiftUIApp.swift in Sources */,
-				988FAFB52AFEB39F007EEDA8 /* AVPlayerVCView.swift in Sources */,
+				988FAFB52AFEB39F007EEDA8 /* AVPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

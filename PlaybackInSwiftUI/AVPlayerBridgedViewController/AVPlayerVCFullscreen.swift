@@ -15,7 +15,7 @@ struct AVPlayerVCFullscreen: View {
     @State var player = AVPlayer(url: Bundle.main.url(forResource: "FrontFlip", withExtension: "mp4")!)
     
     var body: some View {
-        AVPlayerVCView(player: player)
+        AVPlayerView(player: player)
             .edgesIgnoringSafeArea(.all)
             .onAppear {
                 player.play()
