@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var show = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            GeometryReader { geometry in // get the geometry
+                ScrollView {
+                    VStack {
+                        NavigationLink("VideoPlayer Fullscreen",
+                                       destination: VideoPlayerFullscreenView())
+                    }
+                    .padding()
+                    .frame(width: geometry.size.width)  // Make the scroll view full-width
+                    .frame(minHeight: geometry.size.height) // Set the content’s min height to the parent
+                }
+                .navigationTitle("Emma Player")
+            }
         }
-        .padding()
     }
 }
 
