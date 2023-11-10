@@ -9,7 +9,7 @@ import SwiftUI
 import AVKit
 
 struct VideoPlayerFSLandscapeView: View {
-    @State var player = AVPlayer(url: URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/main.m3u8")!)
+    let player = AVPlayer(url: URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/main.m3u8")!)
     @State var orientationOnAppear: UIInterfaceOrientationMask!
 
     var body: some View {

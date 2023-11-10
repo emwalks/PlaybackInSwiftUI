@@ -25,8 +25,21 @@ https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_exam
  
  https://www.polpiella.dev/changing-orientation-for-a-single-screen-in-swiftui
  
- https://stackoverflow.com/questions/67035307/swiftui-how-to-force-landscape-without-appdelegate -> Couldn't get this one to work'
+ https://stackoverflow.com/questions/67035307/swiftui-how-to-force-landscape-without-appdelegate -> Couldn't get this one to work
 
 https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-an-appdelegate-to-a-swiftui-app
 
 https://stackoverflow.com/questions/75270101/swiftui-force-device-rotation-programmatically
+
+https://developer.apple.com/forums/thread/125155
+
+https://developer.apple.com/tutorials/swiftui/interfacing-with-uikit
+
+https://developer.apple.com/videos/play/wwdc2022/10147/
+
+ https://developer.apple.com/documentation/avkit/playing_video_content_in_a_standard_user_interface
+ https://stackoverflow.com/questions/58034049/swiftui-how-to-properly-present-avplayerviewcontroller-modally
+
+// https://www.hackingwithswift.com/quick-start/swiftui/how-to-present-a-full-screen-modal-view-using-fullscreencover
+
+// https://stackoverflow.com/questions/58034049/swiftui-how-to-properly-present-avplayerviewcontroller-modally

@@ -23,6 +23,10 @@ struct ContentView: View {
                         NavigationLink("VideoPlayer FS Landscape",
                                        destination: VideoPlayerFSLandscapeView())
                         .padding()
+                        NavigationLink("AVPlayer VC Fullscreen",
+                                       destination: AVPlayerVCFullscreen())
+                        .padding()
+                        
                     }
                     .padding()
                     .frame(width: geometry.size.width)  // Make the scroll view full-width
