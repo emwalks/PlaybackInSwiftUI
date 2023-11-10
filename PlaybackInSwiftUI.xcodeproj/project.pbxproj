@@ -119,7 +119,7 @@
 				988FAF3E2AFE33B7007EEDA8 /* PlaybackInSwiftUIApp.swift */,
 				988FAF402AFE33B7007EEDA8 /* ContentView.swift */,
 				988FAFA52AFE5472007EEDA8 /* VideoPlayer */,
-				988FAFB12AFEAC10007EEDA8 /* AVPlayerVC */,
+				988FAFB12AFEAC10007EEDA8 /* AVPlayerBridgedViewController */,
 				988FAFAB2AFE7ED4007EEDA8 /* Doc */,
 				988FAFB82AFEB5E5007EEDA8 /* Local Media */,
 				988FAFA22AFE3838007EEDA8 /* Utils */,
@@ -181,13 +181,13 @@
 			path = Doc;
 			sourceTree = "<group>";
 		};
-		988FAFB12AFEAC10007EEDA8 /* AVPlayerVC */ = {
+		988FAFB12AFEAC10007EEDA8 /* AVPlayerBridgedViewController */ = {
 			isa = PBXGroup;
 			children = (
 				988FAFB42AFEB39F007EEDA8 /* AVPlayerVCView.swift */,
 				988FAFB62AFEB4B7007EEDA8 /* AVPlayerVCFullscreen.swift */,
 			);
-			path = AVPlayerVC;
+			path = AVPlayerBridgedViewController;
 			sourceTree = "<group>";
 		};
 		988FAFB82AFEB5E5007EEDA8 /* Local Media */ = {
