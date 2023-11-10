@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class AppDelegate: NSObject, UIApplicationDelegate {
-    
+        
     static var orientation = UIInterfaceOrientationMask.all {
         didSet {
                     if #available(iOS 16.0, *) {

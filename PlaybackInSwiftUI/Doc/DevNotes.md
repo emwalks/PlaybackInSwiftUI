@@ -43,3 +43,37 @@ https://developer.apple.com/videos/play/wwdc2022/10147/
 // https://www.hackingwithswift.com/quick-start/swiftui/how-to-present-a-full-screen-modal-view-using-fullscreencover
 
 // https://stackoverflow.com/questions/58034049/swiftui-how-to-properly-present-avplayerviewcontroller-modally
+
+https://www.kodeco.com/24247382-picture-in-picture-across-all-platforms
+
+https://www.kodeco.com/books/swiftui-cookbook/v1.0/chapters/4-playing-audio-video-in-the-background-in-swiftui
+
+## Supporting PiP
+
+https://www.kodeco.com/24247382-picture-in-picture-across-all-platforms
+
+https://www.kodeco.com/books/swiftui-cookbook/v1.0/chapters/4-playing-audio-video-in-the-background-in-swiftui
+
+- Enable Background Modes in:
+    App Target > Signing & Capabilities > + Capability > Background Modes > Audio, Airplay and Picture in Picture
+- Where @main is declared (normally AppDelegate.swift. ) set AVAudioSession categories
+
+Or if you don't have an 
+```swift
+    private func setMixWithOthersPlaybackCategory() {
+      try? AVAudioSession.sharedInstance().setCategory(
+        AVAudioSession.Category.ambient,
+        mode: AVAudioSession.Mode.moviePlayback,
+        options: [.mixWithOthers])
+    }
+    
+    private func setVideoPlaybackCategory() {
+      try? AVAudioSession.sharedInstance().setCategory(.playback)
+    }
+```
+In full screen VC
+        controller.allowsPictureInPicturePlayback = true
+        controller.canStartPictureInPictureAutomaticallyFromInline = true
+        return controller
+
+ Additionally, you’ll need to run this app on a physical device to test background playback

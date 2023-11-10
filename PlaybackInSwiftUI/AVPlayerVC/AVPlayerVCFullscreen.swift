@@ -12,7 +12,7 @@ import AVKit
 
 struct AVPlayerVCFullscreen: View {
     
-    let player = AVPlayer(url: Bundle.main.url(forResource: "FrontFlip", withExtension: "mp4")!)
+    @State var player = AVPlayer(url: Bundle.main.url(forResource: "FrontFlip", withExtension: "mp4")!)
     
     var body: some View {
         AVPlayerVCView(player: player)
