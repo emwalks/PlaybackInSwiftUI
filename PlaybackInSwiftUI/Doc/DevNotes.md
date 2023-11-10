@@ -67,6 +67,8 @@ http://sample.vodobox.com/planete_interdite/planete_interdite_alternate.m3u8
 
 https://git-lfs.com/
 
+// https://stackoverflow.com/questions/13145048/hls-avplayer-on-ios-return-to-live
+
 ## Supporting PiP
 
 https://www.kodeco.com/24247382-picture-in-picture-across-all-platforms
