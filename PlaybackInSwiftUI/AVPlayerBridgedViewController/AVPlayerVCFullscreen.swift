@@ -8,6 +8,13 @@
 import SwiftUI
 import AVKit
 
+/*
+ This is an example of:
+ - A fullscreen player playing back live content
+ - When loaded, the content is always playing at the live edge
+ - This is an example of interacting with the player items seekable range
+ */
+
 // https://www.hackingwithswift.com/quick-start/swiftui/how-to-present-a-full-screen-modal-view-using-fullscreencover
 // https://stackoverflow.com/questions/13145048/hls-avplayer-on-ios-return-to-live
 

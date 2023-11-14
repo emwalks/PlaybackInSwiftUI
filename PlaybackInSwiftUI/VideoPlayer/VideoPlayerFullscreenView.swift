@@ -11,17 +11,12 @@ import AVKit
 /*
  This is a very basic example of:
  - A fullscreen player
- - With additional user controls (restart)
  - Playing HLS stream video
  - Autoplay on appear
  - Subtitles are available
  - Media Accessibility User Subtitles Styling is free
  - TODO: - check all lock screen / control center interactions
  - Note if you do not add the onDisappear pause, the video will continue to play when you leave the screen.
- 
- This example is based on the Apple VideoPlayer documentation.
- https://developer.apple.com/documentation/avkit/videoplayer
-
  */
 
 struct VideoPlayerFullscreenView: View {

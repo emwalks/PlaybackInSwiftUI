@@ -8,6 +8,12 @@
 import SwiftUI
 import AVKit
 
+/*
+ This is an example of:
+ - A fullscreen player playing back progressive content from the bundle
+ - This is launched by default in Portrait/ Vertical Video mode
+ */
+
 struct AVPlayerFSPortrait: View {
         
     // loading a local item from bundle
