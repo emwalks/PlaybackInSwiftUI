@@ -98,6 +98,9 @@ In full screen VC
         return controller
 
  Additionally, you’ll need to run this app on a physical device to test background playback
+ 
+ https://developer.apple.com/documentation/avfaudio/avaudiosession 
+ I think I'll want playback and movieplayback
 
 ## Hook into Native Experience
 
