@@ -12,8 +12,8 @@ import AVKit
  This is an example of:
  - an AVPlayerViewController being bridged into SwiftUI using UIViewControllerRepresentable.
  - A fullscreen player that can be configured to open in portrait view
- - Supports Pictue in picture (PiP) playback
-    - Note you must also configure your AVAudioSession correctly to suppoty PiP
+ - Supports Pictue in picture (PiP) and Airplay playback
+    - Note you must also configure your AVAudioSession correctly to support PiP
     - You must also enable the background execution mode "Audio, AirPlay, and Picture in Picture"
  - TODO: - Media Accessibility User Subtitles Styling is free
  - TODO: - Check all lock screen / control center interactions

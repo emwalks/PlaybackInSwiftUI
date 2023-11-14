@@ -36,7 +36,7 @@ struct PlaybackInSwiftUIApp: App {
     /*
      PiP video doesn’t play in ambient category.
      By setting mixWithOthers, you allow the user to decide when to pause rather
-     Need to check HiG on this
+     TODO: - Need to check HiG on whether we should allow mixing with others
      https://www.kodeco.com/22372639-video-streaming-tutorial-for-ios-getting-started?page=4#toc-anchor-012
      */
     private func setVideoPlaybackCategory() {
