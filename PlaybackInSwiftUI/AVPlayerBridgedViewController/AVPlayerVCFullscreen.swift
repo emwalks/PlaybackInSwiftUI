@@ -20,14 +20,13 @@ struct AVPlayerVCFullscreen: View {
         AVPlayerView(player: player)
             .edgesIgnoringSafeArea(.all)
             .onAppear {
-                player.play()
                 // seek to live edge
                 guard let seekableRange = player.currentItem?.seekableTimeRanges.last as? CMTimeRange else {
                      return
                  }
                 let livePosition = CMTimeRangeGetEnd(seekableRange)
                 player.seek(to: livePosition)
-                
+                player.play()
             }
             .onDisappear{
                 player.pause()
