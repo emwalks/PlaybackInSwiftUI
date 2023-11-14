@@ -23,16 +23,28 @@ struct PlaybackInSwiftUIApp: App {
         }
     }
     
+    
     private func setMixWithOthersPlaybackCategory() {
         try? AVAudioSession.sharedInstance().setCategory(
-            AVAudioSession.Category.ambient,
-            mode: AVAudioSession.Mode.moviePlayback,
+            .ambient,
+            mode: .moviePlayback,
             options: [.mixWithOthers])
+        try? AVAudioSession.sharedInstance().setActive(true)
+        print("Session is Active")
     }
     
+    /*
+     PiP video doesn’t play in ambient category.
+     By setting mixWithOthers, you allow the user to decide when to pause rather
+     Need to check HiG on this
+     https://www.kodeco.com/22372639-video-streaming-tutorial-for-ios-getting-started?page=4#toc-anchor-012
+     */
     private func setVideoPlaybackCategory() {
         do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback, options: [.mixWithOthers, .allowAirPlay])
+            try AVAudioSession.sharedInstance().setCategory(
+                .playback,
+                mode: .moviePlayback,
+                options: [.mixWithOthers, .allowAirPlay])
             print("Playback OK")
             try AVAudioSession.sharedInstance().setActive(true)
             print("Session is Active")
