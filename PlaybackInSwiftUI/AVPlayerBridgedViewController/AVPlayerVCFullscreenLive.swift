@@ -18,7 +18,7 @@ import AVKit
 // https://www.hackingwithswift.com/quick-start/swiftui/how-to-present-a-full-screen-modal-view-using-fullscreencover
 // https://stackoverflow.com/questions/13145048/hls-avplayer-on-ios-return-to-live
 
-struct AVPlayerVCFullscreen: View {
+struct AVPlayerVCFullscreenLive: View {
     
     // Live Akamai m3u8 HLS stream
     @State var player = AVPlayer(url: URL(string: "https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8")!)
@@ -32,6 +32,7 @@ struct AVPlayerVCFullscreen: View {
                      return
                  }
                 let livePosition = CMTimeRangeGetEnd(seekableRange)
+                // TODO: check tolerance seek option as this does not always seek to live edge
                 player.seek(to: livePosition)
                 player.play()
             }
@@ -44,6 +45,6 @@ struct AVPlayerVCFullscreen: View {
 
 struct AVPlayerVCFullscreen_Previews: PreviewProvider {
     static var previews: some View {
-        AVPlayerVCFullscreen()
+        AVPlayerVCFullscreenLive()
     }
 }
