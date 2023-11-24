@@ -147,6 +147,7 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
 - [ ] Chromecast
 - [x] Multitasking - split view / scroll over
     - [ ] Working but need to check audio session mixing options? Works on real device for PiP
+    - [ ] nice fade in/out not jarring to audience
 - [ ] Custom UI
 - [ ] Subtitles -> No EBU-TT-D support
 - [ ] Playback rate ("free" with standard player on iOS 16)
