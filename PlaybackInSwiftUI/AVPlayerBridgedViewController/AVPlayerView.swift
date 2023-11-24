@@ -38,7 +38,6 @@ struct AVPlayerView: UIViewControllerRepresentable {
         }
         controller.player = player
         controller.allowsPictureInPicturePlayback = true
-        controller.canStartPictureInPictureAutomaticallyFromInline = true
         return controller
     }
     
