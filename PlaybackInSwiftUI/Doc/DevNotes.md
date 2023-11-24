@@ -152,6 +152,7 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
 - [ ] Gravity ("free" with standard player has UI button)
 - [ ] DASH support? 
 - [x] Live video
+    - [ ] instead of time behind live on transport control you might want to show actual time... 
 - [x] On demand HLS streaming
 - [x] Content from bundle
 - [ ] Audio (prob makes sense to do it from mini player)
