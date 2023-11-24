@@ -4,6 +4,10 @@
 
 https://developer.apple.com/documentation/avfoundation/media_playback/configuring_your_app_for_media_playback
 
+[Configure the audio session for playback](#1-configure-the-audio-session-for-playback)
+[Enable Background Execution Mode](#2-enable-background-execution-mode)
+[ In your AVPlayerViewController](#3-in-your-avplayerviewcontroller)
+
 ## 1. Configure the audio session for playback
 
 ```swift
@@ -58,7 +62,7 @@ If you play both audio and video in your app you may have different behaviour fo
         do {
             try AVAudioSession.sharedInstance()
                 .setCategory(.playback,
-                             mode: .moviePlayback,
+                             mode: .default,
                              policy: .longFormAudio,
                              options: [.allowAirPlay])
             print("AVAudioSession set")
@@ -76,49 +80,51 @@ If the audio is primarily continuous spoken audio (audiobooks, podcasts) you may
 
 Set the audio session's routing policy to `.longFormAudio`. Longform audio is anything other than system sounds, such as music or podcasts.
 
+See Supporting_Airplay.md for more on Routing Policies. 
+
 ## 2. Enable Background Execution Mode
 
-You must enable "Audio, AirPlay, and Picture in Picture" background execution mode in Xcode
+You must [enable](https://developer.apple.com/documentation/avfoundation/media_playback/configuring_your_app_for_media_playback#4182619) "Audio, AirPlay, and Picture in Picture" background execution mode in Xcode:
 
-    `App Target > Signing & Capabilities > + Capability > Background Modes > Audio, Airplay and Picture in Picture`
-    
-https://developer.apple.com/documentation/xcode/configuring-background-execution-modes
+## 3. In your AVPlayerViewController
+
+```swift
+// E.g. 
+        controller.allowsPictureInPicturePlayback = true
+        controller.canStartPictureInPictureAutomaticallyFromInline = true
+        return controller
+```
+
+# 4. Testing PiP
+
+It's best to test PiP on a physical device. PiP not available on iPhone simulators (is available on iPad sims). 
+ 
+# Customising PiP System Controls
+
+## Hide skip forward and back buttons
+
+ If you need to restrict skipping content for legal disclaimers or advertisements, use [`requiresLinearPlayback`](https://developer.apple.com/documentation/avkit/avpictureinpicturecontroller/3566335-requireslinearplayback) during the required section of your video. Set this property back to false once you can allow seeking again.
+
+https://developer.apple.com/documentation/avkit/adopting_picture_in_picture_in_a_standard_player#2948600
+
+## Changing PiP Playback Controls Style
+
+Using KVO, set `AVPlayerViewControlsStyle` on a custom PiP View Controller to whatever is required.
+
+https://stackoverflow.com/questions/67528832/how-to-hide-system-controls-on-avpictureinpicturecontrollers-float-window#67528832
+
+https://developer.apple.com/documentation/avkit/avplayerviewcontrolsstyle#1608978
+ 
+# Resources
+
+https://developer.apple.com/documentation/avfoundation/media_playback/configuring_your_app_for_media_playback
+
+https://developer.apple.com/design/human-interface-guidelines/playing-audio
+
+https://developer.apple.com/design/human-interface-guidelines/playing-video
 
 https://www.kodeco.com/24247382-picture-in-picture-across-all-platforms
 
 https://www.kodeco.com/books/swiftui-cookbook/v1.0/chapters/4-playing-audio-video-in-the-background-in-swiftui
 
-- Enable Background Modes in:
-   
-- Where @main is declared (normally AppDelegate.swift. ) set AVAudioSession categories
-
-
-```swift
-    private func setMixWithOthersPlaybackCategory() {
-      try? AVAudioSession.sharedInstance()
-            // can't use ambient category for PiP
-            .setCategory(AVAudioSession.Category.ambient,
-        mode: AVAudioSession.Mode.moviePlayback,
-        options: [.mixWithOthers])
-    }
-    
-    private func setVideoPlaybackCategory() {
-      try? AVAudioSession.sharedInstance().setCategory(.playback)
-    }
-```
-In full screen VC
-        controller.allowsPictureInPicturePlayback = true
-        controller.canStartPictureInPictureAutomaticallyFromInline = true
-        return controller
-
- Additionally, you’ll need to run this app on a physical device to test background playback
- 
- https://developer.apple.com/documentation/avfaudio/avaudiosession 
-
- 
- Customising PiP https://stackoverflow.com/questions/67528832/how-to-hide-system-controls-on-avpictureinpicturecontrollers-float-window#67528832
-
-
-# Resources
-
-
+https://developer.apple.com/documentation/avfaudio/avaudiosession 

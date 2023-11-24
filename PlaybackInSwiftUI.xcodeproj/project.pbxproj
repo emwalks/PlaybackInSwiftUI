@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9830D6452B10B75A002EC33A /* Supporting_Airplay.md in Resources */ = {isa = PBXBuildFile; fileRef = 9830D6442B10B75A002EC33A /* Supporting_Airplay.md */; };
+		9830D6482B10C0DF002EC33A /* AddAirplayPolicyToInfoPList540px.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9830D6472B10C0DF002EC33A /* AddAirplayPolicyToInfoPList540px.gif */; };
 		9874F0722AFEEE5800942D78 /* JebbersPortrait.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9874F0712AFEEE1600942D78 /* JebbersPortrait.mp4 */; };
 		988FAF3F2AFE33B7007EEDA8 /* PlaybackInSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAF3E2AFE33B7007EEDA8 /* PlaybackInSwiftUIApp.swift */; };
 		988FAF412AFE33B7007EEDA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FAF402AFE33B7007EEDA8 /* ContentView.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		9830D6432B10989F002EC33A /* Supporting_Picture_In_Picture.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Supporting_Picture_In_Picture.md; sourceTree = "<group>"; };
 		9830D6442B10B75A002EC33A /* Supporting_Airplay.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Supporting_Airplay.md; sourceTree = "<group>"; };
+		9830D6472B10C0DF002EC33A /* AddAirplayPolicyToInfoPList540px.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AddAirplayPolicyToInfoPList540px.gif; sourceTree = "<group>"; };
 		9874F0712AFEEE1600942D78 /* JebbersPortrait.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = JebbersPortrait.mp4; sourceTree = "<group>"; };
 		988FAF3B2AFE33B7007EEDA8 /* PlaybackInSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaybackInSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		988FAF3E2AFE33B7007EEDA8 /* PlaybackInSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackInSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9830D6462B10C0D0002EC33A /* DocumentationMedia */ = {
+			isa = PBXGroup;
+			children = (
+				9830D6472B10C0DF002EC33A /* AddAirplayPolicyToInfoPList540px.gif */,
+			);
+			path = DocumentationMedia;
+			sourceTree = "<group>";
+		};
 		988FAF322AFE33B7007EEDA8 = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +213,7 @@
 		988FAFB82AFEB5E5007EEDA8 /* Local Media */ = {
 			isa = PBXGroup;
 			children = (
+				9830D6462B10C0D0002EC33A /* DocumentationMedia */,
 				9874F0712AFEEE1600942D78 /* JebbersPortrait.mp4 */,
 				988FAFB92AFEB5FA007EEDA8 /* FrontFlip.mp4 */,
 			);
@@ -315,6 +326,7 @@
 			files = (
 				9830D6452B10B75A002EC33A /* Supporting_Airplay.md in Resources */,
 				9874F0722AFEEE5800942D78 /* JebbersPortrait.mp4 in Resources */,
+				9830D6482B10C0DF002EC33A /* AddAirplayPolicyToInfoPList540px.gif in Resources */,
 				988FAFBA2AFEB901007EEDA8 /* FrontFlip.mp4 in Resources */,
 				988FAFA42AFE3858007EEDA8 /* Launch Screen.storyboard in Resources */,
 				988FAF462AFE33B9007EEDA8 /* Preview Assets.xcassets in Resources */,

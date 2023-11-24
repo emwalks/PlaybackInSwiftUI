@@ -118,3 +118,9 @@ https://developer.apple.com/documentation/avfoundation/media_playback
 # AVAudio Session routing changes
 
 https://developer.apple.com/documentation/avfaudio/responding_to_audio_route_changes
+
+# Converting Video to GIFs using FFMPEG
+
+`$ ffmpeg -i input.mp4 -filter_complex "fps=15,scale=540:-1[s]; [s]split[a][b]; [a]palettegen[palette]; [b][palette]paletteuse" Aoutput_as_540px.gif`
+
+https://creatomate.com/blog/how-to-make-a-gif-from-a-video-using-ffmpeg
