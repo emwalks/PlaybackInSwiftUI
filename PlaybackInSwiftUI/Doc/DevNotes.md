@@ -171,5 +171,5 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
 - [ ] Multi audio track support ("free" with standard player)
 - [ ] Media Accessibility Subtitle Support ("free" with standard player)
 - [ ] Responding to media services were reset notification
-
-
+    - [ ] Why might you care for video? Your PiP behaviour requires the AVAudio Session
+    - [ ] Make sure you only play following a CTA!!
