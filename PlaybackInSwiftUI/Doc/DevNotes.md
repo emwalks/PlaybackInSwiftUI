@@ -153,6 +153,7 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
 - [ ] DASH support? 
 - [x] Live video
     - [ ] instead of time behind live on transport control you might want to show actual time... 
+    - [ ] Note with this live stream while airplaying the subs get colored but on device just white.... 
 - [x] On demand HLS streaming
 - [x] Content from bundle
 - [ ] Audio (prob makes sense to do it from mini player)
