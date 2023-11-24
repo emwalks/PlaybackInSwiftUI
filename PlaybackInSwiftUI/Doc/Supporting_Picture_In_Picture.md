@@ -86,14 +86,25 @@ See Supporting_Airplay.md for more on Routing Policies.
 
 You must [enable](https://developer.apple.com/documentation/avfoundation/media_playback/configuring_your_app_for_media_playback#4182619) "Audio, AirPlay, and Picture in Picture" background execution mode in Xcode:
 
-## 3. In your AVPlayerViewController
+## 3. In your AVPlayerViewController/View
 
 ```swift
 // E.g. 
         controller.allowsPictureInPicturePlayback = true
-        controller.canStartPictureInPictureAutomaticallyFromInline = true
         return controller
 ```
+
+PiP playback starts when the user selects the PiP button in the player interface. In iOS and iPadOS, PiP playback starts automatically if your video is playing in full-screen mode and the user exits the app. 
+
+When a video isn’t filling the entire screen in width, use `canStartPictureInPictureAutomaticallyFromInline` to indicate a video is the primary focus. 
+
+In either case, the player window minimizes to a movable, floating window. In general, the system automatically pauses the video upon scene backgrounding, so you don’t need to pause video based on activation state.
+
+If PiP isn't starting automatically when you background your video app ensure the following is set: 
+
+Settings > General > Picture in Picture > Start PiP Automatically toggle On
+
+https://developer.apple.com/documentation/avkit/adopting_picture_in_picture_in_a_standard_player#2948600
 
 # 4. Testing PiP
 
