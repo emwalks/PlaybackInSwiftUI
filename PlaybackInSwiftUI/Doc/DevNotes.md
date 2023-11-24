@@ -9,6 +9,8 @@ UIViewController.attemptRotationToDeviceOrientation()
 
 ## Links
 
+iOS 16 rewrite of standard AVPlayers https://developer.apple.com/videos/play/wwdc2022/10147/
+
 https://developer.apple.com/streaming/examples/
 
 https://devstreaming-cdn.apple.com/videos/streaming/examples/historic_planet_content_2023-10-26-3d-video/main.m3u8

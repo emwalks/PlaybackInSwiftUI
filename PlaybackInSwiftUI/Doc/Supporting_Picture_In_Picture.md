@@ -138,3 +138,5 @@ https://www.kodeco.com/24247382-picture-in-picture-across-all-platforms
 https://www.kodeco.com/books/swiftui-cookbook/v1.0/chapters/4-playing-audio-video-in-the-background-in-swiftui
 
 https://developer.apple.com/documentation/avfaudio/avaudiosession 
+
+https://developer.apple.com/videos/play/wwdc2020/10176/
