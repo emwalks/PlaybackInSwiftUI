@@ -45,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9830D6432B10989F002EC33A /* Supporting_Picture_In_Picture_Airplay.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Supporting_Picture_In_Picture_Airplay.md; sourceTree = "<group>"; };
 		9874F0712AFEEE1600942D78 /* JebbersPortrait.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = JebbersPortrait.mp4; sourceTree = "<group>"; };
 		988FAF3B2AFE33B7007EEDA8 /* PlaybackInSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaybackInSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		988FAF3E2AFE33B7007EEDA8 /* PlaybackInSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackInSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -181,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				988FAFAC2AFE7F13007EEDA8 /* DevNotes.md */,
+				9830D6432B10989F002EC33A /* Supporting_Picture_In_Picture_Airplay.md */,
 			);
 			path = Doc;
 			sourceTree = "<group>";

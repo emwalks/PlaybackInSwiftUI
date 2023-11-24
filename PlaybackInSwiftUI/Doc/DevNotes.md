@@ -38,6 +38,7 @@ https://developer.apple.com/tutorials/swiftui/interfacing-with-uikit
 https://developer.apple.com/videos/play/wwdc2022/10147/
 
  https://developer.apple.com/documentation/avkit/playing_video_content_in_a_standard_user_interface
+ 
  https://stackoverflow.com/questions/58034049/swiftui-how-to-properly-present-avplayerviewcontroller-modally
 
 // https://www.hackingwithswift.com/quick-start/swiftui/how-to-present-a-full-screen-modal-view-using-fullscreencover
@@ -51,6 +52,10 @@ https://www.kodeco.com/books/swiftui-cookbook/v1.0/chapters/4-playing-audio-vide
 https://medium.com/free-code-camp/how-to-set-up-video-streaming-in-your-app-with-avplayer-7dc21bb82f3
 
 https://ottverse.com/free-hls-m3u8-test-urls/
+
+https://developer.apple.com/design/human-interface-guidelines/playing-audio
+
+https://developer.apple.com/design/human-interface-guidelines/playing-video
 
 
 Hello,
@@ -69,38 +74,6 @@ https://git-lfs.com/
 
 // https://stackoverflow.com/questions/13145048/hls-avplayer-on-ios-return-to-live
 
-## Supporting PiP
-
-https://www.kodeco.com/24247382-picture-in-picture-across-all-platforms
-
-https://www.kodeco.com/books/swiftui-cookbook/v1.0/chapters/4-playing-audio-video-in-the-background-in-swiftui
-
-- Enable Background Modes in:
-    App Target > Signing & Capabilities > + Capability > Background Modes > Audio, Airplay and Picture in Picture
-- Where @main is declared (normally AppDelegate.swift. ) set AVAudioSession categories
-
-Or if you don't have an 
-```swift
-    private func setMixWithOthersPlaybackCategory() {
-      try? AVAudioSession.sharedInstance().setCategory(
-        AVAudioSession.Category.ambient,
-        mode: AVAudioSession.Mode.moviePlayback,
-        options: [.mixWithOthers])
-    }
-    
-    private func setVideoPlaybackCategory() {
-      try? AVAudioSession.sharedInstance().setCategory(.playback)
-    }
-```
-In full screen VC
-        controller.allowsPictureInPicturePlayback = true
-        controller.canStartPictureInPictureAutomaticallyFromInline = true
-        return controller
-
- Additionally, you’ll need to run this app on a physical device to test background playback
- 
- https://developer.apple.com/documentation/avfaudio/avaudiosession 
- I think I'll want playback and movieplayback
 
 ## Hook into Native Experience
 
@@ -109,3 +82,39 @@ In full screen VC
 - Metadata etc
 
 https://developer.apple.com/videos/play/wwdc2022/10147/
+
+## Some AV Player Internals to consider
+
+https://developer.apple.com/documentation/avfoundation/avplayeritem
+
+https://www.mux.com/blog/background-audio-handling-with-ios-avplayer
+
+From the tests I did, I did not see AVPlayer automagically doing the switch to the audio-only rendition for us. So I decided to commit some mild crimes in order to make it work. For better or worse iOS and AVPlayer hold a really strong stance around messing with the internals of how the streaming works. In fact, really the only two handles they give you into that world are preferredPeakBitRate and preferredForwardBufferDuration. Even with these two properties, AVPlayer merely takes them as “suggestions” which basically means don’t be surprised if your suggestions are completely ignored, AVPlayer reserves the right to use whatever bitrate and forward buffer it wants.
+
+Configuring Network Behavior
+
+https://developer.apple.com/documentation/avfoundation/avplayeritem/1388541-preferredpeakbitrate
+
+https://developer.apple.com/documentation/avfoundation/avplayeritem/1388752-canusenetworkresourcesforlivestr
+
+https://developer.apple.com/documentation/avfoundation/avplayeritem/1643630-preferredforwardbufferduration
+
+
+# MediaServicesWereReset
+
+TODO: Although this is an audio session releated notification if you use trigger the reset the video is completely borked.
+
+# Observing playback readiness
+
+https://developer.apple.com/documentation/avfoundation/media_playback/controlling_the_transport_behavior_of_a_player
+
+The seek(to:) method is a convenient way to quickly seek through your presentation, but it’s tuned for speed rather than precision. This means the actual time to which the player seeks may differ slightly from the time you request. If you need to implement precise seeking behavior, use the seek(to:toleranceBefore:toleranceAfter:) method, which lets you indicate the tolerated amount of deviation from your target time (before and after). For example, if you need to provide sample-accurate seeking behavior, specify tolerance values of zero:
+
+// Seek precisely to the specified time.
+await avPlayer.seek(to: time, toleranceBefore: .zero, toleranceAfter: .zero)
+
+https://developer.apple.com/documentation/avfoundation/media_playback
+
+# AVAudio Session routing changes
+
+https://developer.apple.com/documentation/avfaudio/responding_to_audio_route_changes

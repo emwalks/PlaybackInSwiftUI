@@ -1,0 +1,123 @@
+#  Supporting Picture in Picture
+
+# Essentials
+
+https://developer.apple.com/documentation/avfoundation/media_playback/configuring_your_app_for_media_playback
+
+## 1. Configure the audio session for playback
+
+```swift
+
+// E.g. call in your player model. main, app delegate etc. 
+    
+    func configureAudioSessionForVideoPlayback() {
+        do {
+            try AVAudioSession.sharedInstance()
+                .setCategory(.playback,
+                             mode: .moviePlayback,
+                             options: [.allowAirPlay])
+            print("AVAudioSession set")
+            try AVAudioSession.sharedInstance().setActive(true)
+            print("Session is Active")
+        } catch {
+            print(error)
+        }
+    }
+
+```
+
+The [`.playback`](https://developer.apple.com/documentation/avfaudio/avaudiosession/category/1616509-playback) category meaning:
+
+> Sound is essential and might mix with other audio. For example, an audiobook or educational app that teaches a foreign language, which people might want to listen to after leaving the app. 
+
+And behaviour:
+
+> Doesn’t respond to the silence switch. May or may not mix with other sounds. Can play in the background.
+> _(https://developer.apple.com/design/human-interface-guidelines/playing-audio)_
+
+The [`.moviePlayback`](https://developer.apple.com/documentation/avfaudio/avaudiosession/mode/1616623-movieplayback) mode benefit:
+
+> When you set this mode, the audio session uses signal processing to enhance movie playback for certain audio routes such as built-in speaker or headphones.
+
+See links for information on the [mode](https://developer.apple.com/documentation/avfaudio/avaudiosession/mode), [options](https://developer.apple.com/documentation/avfaudio/avaudiosession/categoryoptions) and [policy](https://developer.apple.com/documentation/avfaudio/avaudiosession/routesharingpolicy) you may wish to configure. 
+
+Based on Apple's Human Interface Guidelines for [playing video](https://developer.apple.com/design/human-interface-guidelines/playing-video)
+
+> Avoid allowing audio from different sources to mix as viewers switch between modes.
+
+Be cautious of enabling the `.mixWithOthers` option for video. 
+
+It _may_ be appropriate to enable this option if you always set your video to mute on playback. 
+
+If you play both audio and video in your app you may have different behaviour for your `AVAudioSession` for audio.
+
+```swift
+
+    func configureAudioSessionForAudioPlayback() {
+        
+        do {
+            try AVAudioSession.sharedInstance()
+                .setCategory(.playback,
+                             mode: .default,
+                             options: [.mixWithOthers, .allowAirPlay])
+            print("AVAudioSession set")
+            try AVAudioSession.sharedInstance().setActive(true)
+            print("Session is Active")
+        } catch {
+            print(error)
+        }
+    }
+```
+
+If the audio is primarily continuous spoken audio (audiobooks, podcasts) you may wish to set the [`.spokenAudio`](https://developer.apple.com/documentation/avfaudio/avaudiosession/mode/1616510-spokenaudio) mode:
+
+> Setting this mode indicates that your app should pause, rather than duck, its audio if another app plays a spoken audio prompt. After the interrupting app’s audio ends, you can resume your app’s audio playback.
+
+Set the audio session's routing policy to `.longFormAudio`. Longform audio is anything other than system sounds, such as music or podcasts.
+
+## 2. Enable Background Execution Mode
+
+You must enable "Audio, AirPlay, and Picture in Picture" background execution mode in Xcode
+
+    `App Target > Signing & Capabilities > + Capability > Background Modes > Audio, Airplay and Picture in Picture`
+    
+https://developer.apple.com/documentation/xcode/configuring-background-execution-modes
+
+https://www.kodeco.com/24247382-picture-in-picture-across-all-platforms
+
+https://www.kodeco.com/books/swiftui-cookbook/v1.0/chapters/4-playing-audio-video-in-the-background-in-swiftui
+
+- Enable Background Modes in:
+   
+- Where @main is declared (normally AppDelegate.swift. ) set AVAudioSession categories
+
+
+```swift
+    private func setMixWithOthersPlaybackCategory() {
+      try? AVAudioSession.sharedInstance()
+            // can't use ambient category for PiP
+            .setCategory(AVAudioSession.Category.ambient,
+        mode: AVAudioSession.Mode.moviePlayback,
+        options: [.mixWithOthers])
+    }
+    
+    private func setVideoPlaybackCategory() {
+      try? AVAudioSession.sharedInstance().setCategory(.playback)
+    }
+```
+In full screen VC
+        controller.allowsPictureInPicturePlayback = true
+        controller.canStartPictureInPictureAutomaticallyFromInline = true
+        return controller
+
+ Additionally, you’ll need to run this app on a physical device to test background playback
+ 
+ https://developer.apple.com/documentation/avfaudio/avaudiosession 
+
+ 
+ Customising PiP https://stackoverflow.com/questions/67528832/how-to-hide-system-controls-on-avpictureinpicturecontrollers-float-window#67528832
+
+
+# Resources
+
+
