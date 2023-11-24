@@ -150,6 +150,7 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
 - [ ] Custom UI
 - [ ] Subtitles -> No EBU-TT-D support
 - [ ] Playback rate ("free" with standard player on iOS 16)
+    - [ ] gets reset to x1 at live edge automatically 
 - [ ] Gravity ("free" with standard player has UI button)
 - [ ] DASH support? 
 - [x] Live video
