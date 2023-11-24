@@ -8,6 +8,8 @@ https://www.wwdcnotes.com/notes/wwdc23/10238/
 Intelligent Airplay Support
 
     Add a new key/value to info.plist and set AVInitialRouteSharingPolicy = LongformAudio
+    
+![](../Local Media/DocumentationMedia/AddAirplayPolicyToInfoPList540px.gif)
 
 Supporting Airplay
 
