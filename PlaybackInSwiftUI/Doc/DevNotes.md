@@ -1,6 +1,6 @@
 #  Dev Notes
 
-// TODO: Can we add a listener to update based on player state soit updates for AVPlayer native controls too
+// TODO: Can we add a listener to update based on player state so it updates for AVPlayer native controls too
 
 // TODO:  fix warning
 UIViewController.attemptRotationToDeviceOrientation()
@@ -57,22 +57,7 @@ https://developer.apple.com/design/human-interface-guidelines/playing-audio
 
 https://developer.apple.com/design/human-interface-guidelines/playing-video
 
-
-Hello,
-
-I would share an HLS stream having :
-. 6 video qualities for Adaptive Bitrate
-. 2 alternate audio tracks (English and French)
-. 3 alternate subtitle tracks (English, English with audio description and French)
-
-This movie works pretty well on any iOS devices and with Mac OS X operating systems. I think you could be interested in to check your developments or to test the capabilities of your favourite video player.
-
-Here is this HLS link :
-http://sample.vodobox.com/planete_interdite/planete_interdite_alternate.m3u8
-
-https://git-lfs.com/
-
-// https://stackoverflow.com/questions/13145048/hls-avplayer-on-ios-return-to-live
+https://stackoverflow.com/questions/13145048/hls-avplayer-on-ios-return-to-live
 
 
 # Hook into Native Experience
@@ -173,3 +158,5 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
 - [ ] Responding to media services were reset notification
     - [ ] Why might you care for video? Your PiP behaviour requires the AVAudio Session
     - [ ] Make sure you only play following a CTA!!
+- [ ] Monitoring playback
+- [ ] Changing  Network Behavior of AVPlayer 
