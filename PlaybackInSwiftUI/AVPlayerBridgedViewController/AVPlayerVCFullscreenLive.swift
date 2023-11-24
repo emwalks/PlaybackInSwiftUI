@@ -18,7 +18,7 @@ import AVKit
 
 struct AVPlayerVCFullscreenLive: View {
     
-    @State var player = AVPlayer(url: URL(string: "https://rdmedia.bbc.co.uk/testcard/simulcast/manifests/hevc-ctv.m3u8")!)
+    @State var player = AVPlayer(url: URL(string: "https://rdmedia.bbc.co.uk/testcard/simulcast/manifests/avc-mobile.m3u8")!)
     
     var body: some View {
         AVPlayerView(player: player)
