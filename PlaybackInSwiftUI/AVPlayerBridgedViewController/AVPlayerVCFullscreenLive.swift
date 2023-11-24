@@ -11,7 +11,7 @@ import AVKit
 /*
  This is an example of:
  - A fullscreen player playing back live content
- - When loaded, the content is always playing at the live edge
+ - When loaded, the content starts playing at the live edge
  - This is an example of interacting with the player items' seekable range
  */
 

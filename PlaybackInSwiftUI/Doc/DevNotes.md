@@ -77,7 +77,7 @@ https://git-lfs.com/
 // https://stackoverflow.com/questions/13145048/hls-avplayer-on-ios-return-to-live
 
 
-## Hook into Native Experience
+# Hook into Native Experience
 
 - Control Center 
 - Lock Screen
@@ -85,7 +85,7 @@ https://git-lfs.com/
 
 https://developer.apple.com/videos/play/wwdc2022/10147/
 
-## Some AV Player Internals to consider
+# Some AV Player Internals to consider
 
 https://developer.apple.com/documentation/avfoundation/avplayeritem
 
@@ -126,3 +126,40 @@ https://developer.apple.com/documentation/avfaudio/responding_to_audio_route_cha
 `$ ffmpeg -i input.mp4 -filter_complex "fps=15,scale=540:-1[s]; [s]split[a][b]; [a]palettegen[palette]; [b][palette]paletteuse" Aoutput_as_540px.gif`
 
 https://creatomate.com/blog/how-to-make-a-gif-from-a-video-using-ffmpeg
+
+# User Experiences Examples To Demo
+
+- [x] Video Player Full Screen (based on current orientation)
+- [x] Video Player Full screen force landscape
+- [x] Video Player Embedded
+- [x] AVPlayer Player Full Screen (based on current orientation)
+- [x] AVPlayer Full screen force landscape
+- [ ] AVPlayer Embedded
+- [x] Vertical / Portrait Video (has to be AVPlayer)
+- [ ] In line / mini player 
+- [x] PiP (has to be AVPlayer)
+    - [ ] Changing the PiP controlls
+- [x] Airplay ("free" with standard player?)
+- [ ] HDMI/ Bluetooth/ Peripherals
+- [ ] Chromecast
+- [ ] Multitasking - split view / scroll over
+- [ ] Custom UI
+- [ ] Subtitles -> No EBU-TT-D support
+- [ ] Playback rate ("free" with standard player on iOS 16)
+- [ ] Gravity ("free" with standard player has UI button)
+- [ ] DASH support? 
+- [x] Live video
+- [x] On demand HLS streaming
+- [x] Content from bundle
+- [ ] Audio (prob makes sense to do it from mini player)
+- [ ] Placeholder image for audio
+- [ ] Hooking into the native control center ("free" with standard player" - lock screen yes, control center yes,)
+    - [ ] Putting in a holding image for playback here? 
+- [ ] DRM with Fairplay?
+    - [ ] Not backing up to iCloud
+- [ ] Audio ducking/interruption behaviour (ducking with playback .default/.moviePlayback, pause rather than duck with playback .spokenAudio) 
+- [ ] Multi audio track support ("free" with standard player)
+- [ ] Media Accessibility Subtitle Support ("free" with standard player)
+- [ ] Responding to media services were reset notification
+
+
