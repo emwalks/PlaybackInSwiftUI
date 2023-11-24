@@ -1,8 +1,6 @@
 #  Dev Notes
 
 // TODO: Can we add a listener to update based on player state soit updates for AVPlayer native controls too
-// TODO: - Check all lock screen / control center interactions VideoPlayer
-// TODO: - Check all lock screen / control center interactions VideoPlayer
 
 // TODO:  fix warning
 UIViewController.attemptRotationToDeviceOrientation()
@@ -132,6 +130,7 @@ https://creatomate.com/blog/how-to-make-a-gif-from-a-video-using-ffmpeg
 - [x] Video Player Full Screen (based on current orientation)
 - [x] Video Player Full screen force landscape
 - [x] Video Player Embedded
+    - [ ] Is it possible to add a observer/listener to update the native controls as well as additional controls>
 - [x] AVPlayer Player Full Screen (based on current orientation)
 - [x] AVPlayer Full screen force landscape
 - [ ] AVPlayer Embedded
@@ -153,7 +152,9 @@ https://creatomate.com/blog/how-to-make-a-gif-from-a-video-using-ffmpeg
 - [x] Content from bundle
 - [ ] Audio (prob makes sense to do it from mini player)
 - [ ] Placeholder image for audio
-- [ ] Hooking into the native control center ("free" with standard player" - lock screen yes, control center yes,)
+- [ ] Hooking into the native control center 
+    - [x] Checked with AVPlayerVC ("free" with standard player" - lock screen yes, control center yes,)
+    - [ ] Checked with VideoPlayer 
     - [ ] Putting in a holding image for playback here? 
 - [ ] DRM with Fairplay?
     - [ ] Not backing up to iCloud
