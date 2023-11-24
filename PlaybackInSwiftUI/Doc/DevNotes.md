@@ -125,6 +125,10 @@ https://developer.apple.com/documentation/avfaudio/responding_to_audio_route_cha
 
 https://creatomate.com/blog/how-to-make-a-gif-from-a-video-using-ffmpeg
 
+# BBC Test Streams
+
+https://rdmedia.bbc.co.uk/testcard/simulcast/
+
 # User Experiences Examples To Demo
 
 - [x] Video Player Full Screen (based on current orientation)

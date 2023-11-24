@@ -13,16 +13,12 @@ import AVKit
  - A fullscreen player playing back live content
  - When loaded, the content starts playing at the live edge
  - This is an example of interacting with the player items' seekable range
+ - This live stream has multiple audio languge tracks, audio described tracks and multiple language subtitle track
  */
 
 struct AVPlayerVCFullscreenLive: View {
     
-    @State var player = AVPlayer(url: URL(string:
-                                          // There is an issue with the live edge/ seekable on this stream. "https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8"
-                                          // BBC One live (geo ip restricted) stream"http://vs-hls-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_hd/mobile_wifi_main_sd_abr_v2.m3u8"
-                                         // BBC News 24
-                                          "https://vs-hls-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_sd_abr_v2.m3u8"
-                                         )!)
+    @State var player = AVPlayer(url: URL(string: "https://rdmedia.bbc.co.uk/testcard/simulcast/manifests/hevc-ctv.m3u8")!)
     
     var body: some View {
         AVPlayerView(player: player)
