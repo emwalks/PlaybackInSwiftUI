@@ -145,8 +145,8 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
 - [x] Airplay ("free" with standard player?)
 - [ ] HDMI/ Bluetooth/ Peripherals
 - [ ] Chromecast
-- [ ] Multitasking - split view / scroll over
-    - [ ] Working but need to check audio session mixing options? Might be different on real device
+- [x] Multitasking - split view / scroll over
+    - [ ] Working but need to check audio session mixing options? Works on real device for PiP
 - [ ] Custom UI
 - [ ] Subtitles -> No EBU-TT-D support
 - [ ] Playback rate ("free" with standard player on iOS 16)
