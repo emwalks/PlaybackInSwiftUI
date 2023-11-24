@@ -15,6 +15,7 @@ https://developer.apple.com/documentation/avfoundation/media_playback/configurin
             try AVAudioSession.sharedInstance()
                 .setCategory(.playback,
                              mode: .moviePlayback,
+                             policy: .longFormVideo,
                              options: [.allowAirPlay])
             print("AVAudioSession set")
             try AVAudioSession.sharedInstance().setActive(true)
@@ -39,7 +40,7 @@ The [`.moviePlayback`](https://developer.apple.com/documentation/avfaudio/avaudi
 
 > When you set this mode, the audio session uses signal processing to enhance movie playback for certain audio routes such as built-in speaker or headphones.
 
-See links for information on the [mode](https://developer.apple.com/documentation/avfaudio/avaudiosession/mode), [options](https://developer.apple.com/documentation/avfaudio/avaudiosession/categoryoptions) and [policy](https://developer.apple.com/documentation/avfaudio/avaudiosession/routesharingpolicy) you may wish to configure. 
+See links for information on the [mode](https://developer.apple.com/documentation/avfaudio/avaudiosession/mode), [options](https://developer.apple.com/documentation/avfaudio/avaudiosession/categoryoptions) and [routing policy](https://developer.apple.com/documentation/avfaudio/avaudiosession/routesharingpolicy) you may wish to configure. 
 
 Based on Apple's Human Interface Guidelines for [playing video](https://developer.apple.com/design/human-interface-guidelines/playing-video)
 
@@ -54,12 +55,12 @@ If you play both audio and video in your app you may have different behaviour fo
 ```swift
 
     func configureAudioSessionForAudioPlayback() {
-        
         do {
             try AVAudioSession.sharedInstance()
                 .setCategory(.playback,
-                             mode: .default,
-                             options: [.mixWithOthers, .allowAirPlay])
+                             mode: .moviePlayback,
+                             policy: .longFormAudio,
+                             options: [.allowAirPlay])
             print("AVAudioSession set")
             try AVAudioSession.sharedInstance().setActive(true)
             print("Session is Active")
