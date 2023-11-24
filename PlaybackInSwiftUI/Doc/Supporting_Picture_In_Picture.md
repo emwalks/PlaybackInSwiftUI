@@ -19,7 +19,6 @@ https://developer.apple.com/documentation/avfoundation/media_playback/configurin
             try AVAudioSession.sharedInstance()
                 .setCategory(.playback,
                              mode: .moviePlayback,
-                             policy: .longFormVideo,
                              options: [.allowAirPlay])
             print("AVAudioSession set")
             try AVAudioSession.sharedInstance().setActive(true)

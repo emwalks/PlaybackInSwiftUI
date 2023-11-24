@@ -41,16 +41,15 @@ struct PlaybackInSwiftUIApp: App {
     }
     
     /*
-     PiP video doesn’t play in ambient category.
      
      https://www.kodeco.com/22372639-video-streaming-tutorial-for-ios-getting-started?page=4#toc-anchor-012
      */
+    
     private func configureAudioSessionForVideoPlayback() {
         do {
             try AVAudioSession.sharedInstance()
                 .setCategory(.playback,
                              mode: .moviePlayback,
-                             policy: .longFormVideo,
                              options: [.allowAirPlay])
             print("AVAudioSession set")
             try AVAudioSession.sharedInstance().setActive(true)
