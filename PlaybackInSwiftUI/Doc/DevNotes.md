@@ -61,7 +61,11 @@ https://stackoverflow.com/questions/13145048/hls-avplayer-on-ios-return-to-live
 
 https://www.kodeco.com/22372639-video-streaming-tutorial-for-ios-getting-started?page=4#toc-anchor-012
 
+https://www.wwdcnotes.com/topics/Audio&Video/
 
+https://developer.apple.com/videos/play/wwdc2019/503/
+
+https://developer.apple.com/documentation/avkit/playing_video_content_in_a_standard_user_interface
 
 # Hook into Native Experience
 
@@ -127,7 +131,9 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
 - [x] AVPlayer Full screen force landscape
 - [ ] AVPlayer Embedded
 - [x] Vertical / Portrait Video (has to be AVPlayer)
-- [ ] In line / mini player 
+- [ ] In line / mini player (embedded inline)
+     https://developer.apple.com/documentation/avkit/playing_video_content_in_a_standard_user_interface
+     https://developer.apple.com/videos/play/wwdc2019/503/
 - [ ] Swipe to floating mini player
 - [x] PiP (has to be AVPlayer)
     - [ ] Changing the PiP controlls

@@ -14,7 +14,8 @@ import AVKit
  - Playing HLS stream video
  - Autoplay on appear
  - Subtitles are available
- - Media Accessibility User Subtitles Styling is free
+ - Media Accessibility User Subtitles Styling out of the box
+ - From iOS 16 you get Playback Speed out of the box
  - TODO: - check all lock screen / control center interactions
  - Note if you do not add the onDisappear pause, the video will continue to play when you leave the screen.
  */

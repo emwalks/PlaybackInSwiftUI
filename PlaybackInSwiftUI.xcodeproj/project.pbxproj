@@ -71,6 +71,7 @@
 		988FAFBC2AFEBD6D007EEDA8 /* VideoPlayerPortraitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerPortraitView.swift; sourceTree = "<group>"; };
 		98C6E80A2AFEEB800053DB96 /* AVPlayerFSPortrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerFSPortrait.swift; sourceTree = "<group>"; };
 		98E710512AFEC515007179BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		98F47F252B234B6B003B45EE /* iOS16_SystemMediaPlayers_update.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = iOS16_SystemMediaPlayers_update.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +195,7 @@
 				988FAFAC2AFE7F13007EEDA8 /* DevNotes.md */,
 				9830D6432B10989F002EC33A /* Supporting_Picture_In_Picture.md */,
 				9830D6442B10B75A002EC33A /* Supporting_Airplay.md */,
+				98F47F252B234B6B003B45EE /* iOS16_SystemMediaPlayers_update.md */,
 			);
 			path = Doc;
 			sourceTree = "<group>";
