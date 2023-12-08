@@ -6,7 +6,7 @@ https://developer.apple.com/documentation/avfoundation/media_playback/configurin
 
 [Configure the audio session for playback](#1-configure-the-audio-session-for-playback)
 [Enable Background Execution Mode](#2-enable-background-execution-mode)
-[ In your AVPlayerViewController](#3-in-your-avplayerviewcontroller)
+[In your AVPlayerViewController](#3-in-your-avplayerviewcontroller)
 
 ## 1. Configure the audio session for playback
 
@@ -108,6 +108,8 @@ https://developer.apple.com/documentation/avkit/adopting_picture_in_picture_in_a
 # 4. Testing PiP
 
 It's best to test PiP on a physical device. PiP not available on iPhone simulators (is available on iPad sims). 
+
+Note the ±Xs skip forward and back controls changed from ±15s to ±10s in iOS 16
  
 # Customising PiP System Controls
 

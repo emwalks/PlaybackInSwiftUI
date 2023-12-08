@@ -144,7 +144,7 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
     - [ ] Working but need to check audio session mixing options? Works on real device for PiP
     - [ ] nice fade in/out not jarring to audience
 - [ ] Custom UI
-- [ ] Subtitles -> No EBU-TT-D support
+- [ ] Subtitles -> Might have EBU-TT-D support?? 
 - [x] Playback rate ("free" with standard player on iOS 16)
     - [x] gets reset to x1 at live edge automatically 
 - [x] Gravity ("free" with standard player has UI button)
