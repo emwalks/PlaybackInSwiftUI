@@ -59,6 +59,9 @@ https://developer.apple.com/design/human-interface-guidelines/playing-video
 
 https://stackoverflow.com/questions/13145048/hls-avplayer-on-ios-return-to-live
 
+https://www.kodeco.com/22372639-video-streaming-tutorial-for-ios-getting-started?page=4#toc-anchor-012
+
+
 
 # Hook into Native Experience
 

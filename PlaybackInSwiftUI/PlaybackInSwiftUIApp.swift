@@ -23,7 +23,6 @@ struct PlaybackInSwiftUIApp: App {
         }
     }
     
-    
     private func configureAudioSessionForAudioPlayback() {
         
         do {
@@ -39,11 +38,6 @@ struct PlaybackInSwiftUIApp: App {
             print(error)
         }
     }
-    
-    /*
-     
-     https://www.kodeco.com/22372639-video-streaming-tutorial-for-ios-getting-started?page=4#toc-anchor-012
-     */
     
     private func configureAudioSessionForVideoPlayback() {
         do {
