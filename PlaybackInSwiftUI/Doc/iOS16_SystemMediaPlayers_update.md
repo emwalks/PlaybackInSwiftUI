@@ -82,9 +82,64 @@ playerItem.externalMetadata = [titleItem, subtitleItem, infoItem]
 ## Interstitials 
 
 - As of iOS 16 interstitials are now supported in AVPlayerViewController
+-  Interstitials, either in the stream or defined locally through AVPlayerInterstitialEvents, will now be marked along the timeline. When the timeline hits a marker, we'll begin playing the interstitial. If your interstitials are already fully defined within your HLS playlist, you'll get this behavior automatically– no adoption required. If not, or if you app requires some more custom behavior, we're introducing some new API as well. 
 
+- 
+
+
+```swift
+// Creating a skip button for a preroll ad
+
+let eventController = AVPlayerInterstitialEventController(primaryPlayer: mediaPlayer)
+
+// create an interstitial event 
+// restricts seeking past interstitial and playing quickly through
+let event = AVPlayerInterstitialEvent(primaryItem: interstitialItem, time: .zero)
+event.restrictions = [
+	.requiresPlaybackAtPreferredRateForAdvancement,
+	.constrainsSeekingForwardInPrimaryContent
+]
+
+// adds interstitial to VC
+eventController.events.append(event)
+
+// uses delegate method to allow e.g. skipping add after 5s
+// Note that when adding any custom UI elements to an AVPlayerViewController, such as this ad skip button, always make sure to add to them as subviews of the contentOverlayView.
+func playerViewController(playerViewController: AVPlayerViewController, willPresent interstitial: AVInterstitialTimeRange) {
+	showSkipButton(afterTime: 5.0, onPress: {
+		eventController.cancelCurrentEvent(withResumptionOffset: CMTime.zero)
+	})
+}
+```
+
+Related videos for interstitials
+https://developer.apple.com/videos/play/wwdc2022/10145/
+https://developer.apple.com/videos/play/wwdc2021/10140
 
 ## Playback Speed
+
+Both AVPlayerView and AVPlayerViewController can now optionally show a playback speed menu using some new API we've added.
+
+
+
+```swift
+// Setting custom playback speeds
+
+let player = AVPlayerViewController()
+player.player = // Some AVPlayer
+
+present(player, animated: true)
+
+// localised name for accessibility
+let newSpeed = AVPlaybackSpeed(rate: 2.5, localizedName: "Two and a half times speed”)
+
+player.speeds.append(newSpeed)
+
+// you can disable speeds by passing empty [] list of speeds
+
+```
+
+always call AVPlayer play() to begin playback. Never start playback by calling setRate:1.0, as the selected rate might not be 1.0
 
 ## What you get with AVPlayerViewController
 
