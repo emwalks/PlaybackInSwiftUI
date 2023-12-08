@@ -8,5 +8,10 @@
 
 Based on tvOS Player improvements
 
-Removed chrome across the board 
+## UI Update 
 
+- Removed chrome across the board 
+
+<img src="../Local Media/DocumentationMedia/iOS15_Chrome.PNG"/> 
+
+<img src="../Local Media/DocumentationMedia/iOS16_NoChrome.png"/> 

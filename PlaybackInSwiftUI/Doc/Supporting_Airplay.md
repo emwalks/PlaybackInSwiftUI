@@ -9,7 +9,7 @@ Intelligent Airplay Support
 
     Add a new key/value to info.plist and set AVInitialRouteSharingPolicy = LongformAudio
     
-<img src="https://github.com/emwalks/PlaybackInSwiftUI/blob/main/PlaybackInSwiftUI/Local%20Media/DocumentationMedia/AddAirplayPolicyToInfoPList540px.gif"/> 
+<img src="../Local Media/DocumentationMedia/AddAirplayPolicyToInfoPList540px.gif"/> 
 
 Supporting Airplay
 
