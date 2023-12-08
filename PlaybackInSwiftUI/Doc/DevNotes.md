@@ -125,6 +125,7 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
 - [ ] AVPlayer Embedded
 - [x] Vertical / Portrait Video (has to be AVPlayer)
 - [ ] In line / mini player 
+- [ ] Swipe to floating mini player
 - [x] PiP (has to be AVPlayer)
     - [ ] Changing the PiP controlls
 - [x] Airplay ("free" with standard player?)
@@ -135,13 +136,13 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
     - [ ] nice fade in/out not jarring to audience
 - [ ] Custom UI
 - [ ] Subtitles -> No EBU-TT-D support
-- [ ] Playback rate ("free" with standard player on iOS 16)
-    - [ ] gets reset to x1 at live edge automatically 
-- [ ] Gravity ("free" with standard player has UI button)
+- [x] Playback rate ("free" with standard player on iOS 16)
+    - [x] gets reset to x1 at live edge automatically 
+- [x] Gravity ("free" with standard player has UI button)
 - [ ] DASH support? 
 - [x] Live video
     - [ ] instead of time behind live on transport control you might want to show actual time... 
-    - [ ] Note with this live stream while airplaying the subs get colored but on device just white.... 
+    - [ ] Note with this live stream while airplaying the subs get colored but on device just white... 
 - [x] On demand HLS streaming
 - [x] Content from bundle
 - [ ] Audio (prob makes sense to do it from mini player)
@@ -159,4 +160,9 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
     - [ ] Why might you care for video? Your PiP behaviour requires the AVAudio Session
     - [ ] Make sure you only play following a CTA!!
 - [ ] Monitoring playback
-- [ ] Changing  Network Behavior of AVPlayer 
+- [ ] Changing  Network Behaviour of AVPlayer
+- [ ] Thumbnail Scrubbing
+- [ ] No live rewind
+- [ ] Ad insertion / interstitials
+- [ ] Audio ducking
+
