@@ -18,7 +18,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                                 windowScene.requestGeometryUpdate(.iOS(interfaceOrientations: orientation))
                             }
                         }
-                        // TODO: fix warning
                         UIViewController.attemptRotationToDeviceOrientation()
                     } else {
                         if orientation == .landscape {
