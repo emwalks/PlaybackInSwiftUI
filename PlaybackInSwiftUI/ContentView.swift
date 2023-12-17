@@ -31,11 +31,14 @@ struct ContentView: View {
                         .padding()
                         
                     }
+                    // this ensures the contrast is > 4.5:1 as per WCAG 1.4.3
+                    .font(.title3)
                     .padding()
                     .frame(width: geometry.size.width)  // Make the scroll view full-width
                     .frame(minHeight: geometry.size.height) // Set the content’s min height to the parent
                 }
                 .navigationTitle("EmPlayer")
+                
             }
         }
     }

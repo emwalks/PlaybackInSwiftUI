@@ -67,6 +67,10 @@ https://developer.apple.com/videos/play/wwdc2019/503/
 
 https://developer.apple.com/documentation/avkit/playing_video_content_in_a_standard_user_interface
 
+https://www.avanderlee.com/swiftui/sfsafariviewcontroller-open-webpages-in-app/?utm_campaign=coschedule&utm_source=linkedin&utm_medium=%F0%9F%9A%80%20Antoine%20van%20der%20Lee
+
+-> check out how to make a reusable UIKit bridge
+
 # Hook into Native Experience
 
 - Control Center 
@@ -174,4 +178,5 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
 - [ ] No live rewind
 - [ ] Ad insertion / interstitials
 - [ ] Audio ducking
+- [ ] Accessibility of the standard AV player
 
