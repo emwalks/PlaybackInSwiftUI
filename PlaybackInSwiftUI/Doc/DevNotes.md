@@ -178,5 +178,5 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
 - [ ] No live rewind
 - [ ] Ad insertion / interstitials
 - [ ] Audio ducking
-- [ ] Accessibility of the standard AV player
+- [ ] Accessibility of the standard AV player / VideoPlayer? 
 
