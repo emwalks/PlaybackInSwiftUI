@@ -31,7 +31,7 @@ struct PlaybackInSwiftUIApp: App {
                              mode: .spokenAudio,
                              policy: .longFormAudio,
                              options: [.mixWithOthers, .allowAirPlay])
-            print("AVAudioSession set")
+            print("AVAudioSession set for Audio")
             try AVAudioSession.sharedInstance().setActive(true)
             print("Session is Active")
         } catch {
@@ -45,7 +45,7 @@ struct PlaybackInSwiftUIApp: App {
                 .setCategory(.playback,
                              mode: .moviePlayback,
                              options: [.allowAirPlay])
-            print("AVAudioSession set")
+            print("AVAudioSession set for Video")
             try AVAudioSession.sharedInstance().setActive(true)
             print("Session is Active")
         } catch {
