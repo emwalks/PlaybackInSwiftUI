@@ -154,22 +154,25 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
 
 # User Experiences Examples To Demo
 
-- [x] Video Player Full Screen (based on current orientation)
-- [x] Video Player Full screen force landscape
+- [x] VideoPlayer Full Screen (based on current orientation)
+- [x] VideoPlayer Full screen force landscape
+- [x] Vertical / Portrait VideoPlayer
+    - [x] Tried https://stackoverflow.com/questions/73992868/swiftui-how-to-resize-a-video-to-fill-all-vertical-iphone-while-maintaining-a but need to try generalise - do you need to know the video aspect ratio? Can you get it from asset? 
+        This is super gross - can't see full AVPlayer controls. See VideoPlayerPortraitView.swift
 - [x] Video Player Embedded
     - [ ] Is it possible to add a observer/listener to update the native controls as well as additional controls>
 - [x] AVPlayer Player Full Screen (based on current orientation)
 - [x] AVPlayer Full screen force landscape
 - [ ] AVPlayer Embedded to Fullscreen 
     https://github.com/adamzarn/AZVideoPlayer
-- [x] Vertical / Portrait Video (has to be AVPlayer)
-    - [ ] Try https://stackoverflow.com/questions/73992868/swiftui-how-to-resize-a-video-to-fill-all-vertical-iphone-while-maintaining-a but need to try generalise - do you need to know the video aspect ratio? Can you get it from asset? 
+- [x] Vertical / Portrait Video AVPlayer
+    - [x] Try https://stackoverflow.com/questions/73992868/swiftui-how-to-resize-a-video-to-fill-all-vertical-iphone-while-maintaining-a but need to try generalise - do you need to know the video aspect ratio? Can you get it from asset? 
         Where is 
 - [ ] In line / mini player (embedded inline)
      https://developer.apple.com/documentation/avkit/playing_video_content_in_a_standard_user_interface
      https://developer.apple.com/videos/play/wwdc2019/503/
 - [ ] Swipe to floating mini player
-- [x] PiP (has to be AVPlayer)
+- [x] PiP (has to be AVPlayerVC)
     - [ ] Changing the PiP controlls
 - [x] Airplay ("free" with standard player?)
 - [ ] HDMI/ Bluetooth/ Peripherals
@@ -212,4 +215,5 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
         https://developer.apple.com/documentation/avkit/presenting_navigation_markers
 - [ ] Working with Interstitial Content/ Ad insertion
         https://developer.apple.com/documentation/avkit/working_with_interstitial_content
+- [ ] I need to do some research on SwiftUI View lifecycle, updates, and e.g. passing player from embedded to fullscreen and back maintaining continuity of playback
 

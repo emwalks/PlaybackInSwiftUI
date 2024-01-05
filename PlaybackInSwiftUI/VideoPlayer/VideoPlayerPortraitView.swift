@@ -15,7 +15,7 @@ import AVKit
 
 struct VideoPlayerPortraitView: View {
     
-    let player = AVPlayer(url: URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/main.m3u8")!)
+    let player = AVPlayer(url: Bundle.main.url(forResource: "JebbersPortrait", withExtension: "mp4")!)
     
     var body: some View {
         ZStack {
@@ -25,7 +25,7 @@ struct VideoPlayerPortraitView: View {
                     .frame(width: geometry.size.height * 16 / 9, height: geometry.size.height)
                     .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
                     .onAppear() {
-                        player.isMuted = true
+                        player.isMuted = false
                         player.play()
                     }
                     .onDisappear {
