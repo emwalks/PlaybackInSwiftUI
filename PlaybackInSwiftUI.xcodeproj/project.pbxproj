@@ -36,6 +36,7 @@
 		98D44AB82B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_StandardAVPlayer2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D44AB42B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_StandardAVPlayer2.png */; };
 		98D44ABB2B485B4900BDB7A5 /* iOS17.2_NewAdditionalControls.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D44AB92B485B4900BDB7A5 /* iOS17.2_NewAdditionalControls.png */; };
 		98D44ABC2B485B4900BDB7A5 /* iOS16.1_OldAdditionalControlsMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D44ABA2B485B4900BDB7A5 /* iOS16.1_OldAdditionalControlsMenu.png */; };
+		98D44ABE2B485F4C00BDB7A5 /* iOS16_iOS17_SystemMediaPlayers_updates.md in Resources */ = {isa = PBXBuildFile; fileRef = 98D44ABD2B485F4C00BDB7A5 /* iOS16_iOS17_SystemMediaPlayers_updates.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,8 +92,8 @@
 		98D44AB42B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_StandardAVPlayer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone15iOS17_2_EBUTTD_StandardAVPlayer2.png; sourceTree = "<group>"; };
 		98D44AB92B485B4900BDB7A5 /* iOS17.2_NewAdditionalControls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOS17.2_NewAdditionalControls.png; sourceTree = "<group>"; };
 		98D44ABA2B485B4900BDB7A5 /* iOS16.1_OldAdditionalControlsMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOS16.1_OldAdditionalControlsMenu.png; sourceTree = "<group>"; };
+		98D44ABD2B485F4C00BDB7A5 /* iOS16_iOS17_SystemMediaPlayers_updates.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS16_iOS17_SystemMediaPlayers_updates.md; sourceTree = "<group>"; };
 		98E710512AFEC515007179BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		98F47F252B234B6B003B45EE /* iOS16_SystemMediaPlayers_update.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = iOS16_SystemMediaPlayers_update.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,9 +225,9 @@
 			isa = PBXGroup;
 			children = (
 				988FAFAC2AFE7F13007EEDA8 /* DevNotes.md */,
+				98D44ABD2B485F4C00BDB7A5 /* iOS16_iOS17_SystemMediaPlayers_updates.md */,
 				9830D6432B10989F002EC33A /* Supporting_Picture_In_Picture.md */,
 				9830D6442B10B75A002EC33A /* Supporting_Airplay.md */,
-				98F47F252B234B6B003B45EE /* iOS16_SystemMediaPlayers_update.md */,
 				98D44AB02B4853B800BDB7A5 /* EBUTDD_PositionalSubtitles.md */,
 			);
 			path = Doc;
@@ -361,6 +362,7 @@
 				98D44AB82B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_StandardAVPlayer2.png in Resources */,
 				98722A642B23544000FE1F33 /* iOS16_NoChrome.png in Resources */,
 				98722A662B235A8F00FE1F33 /* iOS16_TimelineScrub.gif in Resources */,
+				98D44ABE2B485F4C00BDB7A5 /* iOS16_iOS17_SystemMediaPlayers_updates.md in Resources */,
 				9874F0722AFEEE5800942D78 /* JebbersPortrait.mp4 in Resources */,
 				9830D6482B10C0DF002EC33A /* AddAirplayPolicyToInfoPList540px.gif in Resources */,
 				988FAFA42AFE3858007EEDA8 /* Launch Screen.storyboard in Resources */,
