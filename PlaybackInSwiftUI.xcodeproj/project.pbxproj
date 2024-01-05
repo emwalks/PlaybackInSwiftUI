@@ -34,6 +34,8 @@
 		98D44AB62B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_Toucan2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D44AB22B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_Toucan2.png */; };
 		98D44AB72B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_Toucan.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D44AB32B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_Toucan.png */; };
 		98D44AB82B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_StandardAVPlayer2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D44AB42B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_StandardAVPlayer2.png */; };
+		98D44ABB2B485B4900BDB7A5 /* iOS17.2_NewAdditionalControls.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D44AB92B485B4900BDB7A5 /* iOS17.2_NewAdditionalControls.png */; };
+		98D44ABC2B485B4900BDB7A5 /* iOS16.1_OldAdditionalControlsMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D44ABA2B485B4900BDB7A5 /* iOS16.1_OldAdditionalControlsMenu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		98D44AB22B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_Toucan2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone15iOS17_2_EBUTTD_Toucan2.png; sourceTree = "<group>"; };
 		98D44AB32B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_Toucan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone15iOS17_2_EBUTTD_Toucan.png; sourceTree = "<group>"; };
 		98D44AB42B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_StandardAVPlayer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone15iOS17_2_EBUTTD_StandardAVPlayer2.png; sourceTree = "<group>"; };
+		98D44AB92B485B4900BDB7A5 /* iOS17.2_NewAdditionalControls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOS17.2_NewAdditionalControls.png; sourceTree = "<group>"; };
+		98D44ABA2B485B4900BDB7A5 /* iOS16.1_OldAdditionalControlsMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOS16.1_OldAdditionalControlsMenu.png; sourceTree = "<group>"; };
 		98E710512AFEC515007179BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		98F47F252B234B6B003B45EE /* iOS16_SystemMediaPlayers_update.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = iOS16_SystemMediaPlayers_update.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +132,8 @@
 				98D44AB42B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_StandardAVPlayer2.png */,
 				98D44AB32B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_Toucan.png */,
 				98D44AB22B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_Toucan2.png */,
+				98D44ABA2B485B4900BDB7A5 /* iOS16.1_OldAdditionalControlsMenu.png */,
+				98D44AB92B485B4900BDB7A5 /* iOS17.2_NewAdditionalControls.png */,
 			);
 			path = DocumentationMedia;
 			sourceTree = "<group>";
@@ -358,6 +364,8 @@
 				9874F0722AFEEE5800942D78 /* JebbersPortrait.mp4 in Resources */,
 				9830D6482B10C0DF002EC33A /* AddAirplayPolicyToInfoPList540px.gif in Resources */,
 				988FAFA42AFE3858007EEDA8 /* Launch Screen.storyboard in Resources */,
+				98D44ABC2B485B4900BDB7A5 /* iOS16.1_OldAdditionalControlsMenu.png in Resources */,
+				98D44ABB2B485B4900BDB7A5 /* iOS17.2_NewAdditionalControls.png in Resources */,
 				98D44AB52B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_StandardAVPlayer.png in Resources */,
 				988FAF462AFE33B9007EEDA8 /* Preview Assets.xcassets in Resources */,
 				98D44AB72B48559D00BDB7A5 /* iPhone15iOS17_2_EBUTTD_Toucan.png in Resources */,

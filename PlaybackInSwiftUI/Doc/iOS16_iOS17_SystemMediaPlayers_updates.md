@@ -12,11 +12,13 @@ Based on tvOS Player improvements
 - Centralised CTA buttons - no longer at the bottom
 - Removed chrome across the board 
 
+iOS 15
 <img src="../Local Media/DocumentationMedia/iOS15_Chrome.PNG"/> 
 
+iOS 16
 <img src="../Local Media/DocumentationMedia/iOS16_NoChrome.png"/>
 
-- ± 15s now ± 10s. True of system player and PiP experience
+- ± 15s now *± 10s*. True of system player and PiP experience
 - Remove slider indicator for current position
 - Allow scrubbing / dragging from anywhere in the timeline OR video view - pretty cool feature. 
     When in video view other controls not visible just scrub bar
@@ -140,3 +142,13 @@ Always call AVPlayer play() to begin playback. Never start playback by calling s
 ## What you get with AVPlayerViewController
 
 <img src="../Local Media/DocumentationMedia/WhatYouGetWithAVKitStandardMediaPlayer.png"/> 
+
+# iOS 17.2 System Media Players Update
+
+I notice as of 17.2 at least (possibly before but not in 16.1) you get an additional controls menu for eac individual item (playback speed, languages, subtitles) and with live content when you seek behind the live edge you get a seek to live edge CTA  😍
+
+### iOS 17.2
+<img src="../Local Media/DocumentationMedia/iOS17.2_NewAdditionalControls.png"/> 
+
+### iOS 16.1
+<img src="../Local Media/DocumentationMedia/iOS16.1_OldAdditionalControlsMenu.png"/> 
