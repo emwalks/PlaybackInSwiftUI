@@ -171,10 +171,13 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
 - [x] AVPlayerView Player Full Screen (based on current orientation)
 - [x] AVPlayerView Full screen force landscape
 - [ ] AVPlayerView Embedded to Fullscreen 
-    https://github.com/adamzarn/AZVideoPlayer
+     https://github.com/adamzarn/AZVideoPlayer
+     https://stackoverflow.com/questions/67824702/how-to-go-full-screen-with-videoplayer-in-swiftui
+     https://developer.apple.com/forums/thread/131762
+     https://technology.mlblogs.com/leveraging-swiftui-for-video-playback-in-ios-part-1-of-2-e1133caa4e1c
 - [x] AVPlayerView Vertical / Portrait Video 
     - [x] Try https://stackoverflow.com/questions/73992868/swiftui-how-to-resize-a-video-to-fill-all-vertical-iphone-while-maintaining-a but need to try generalise - do you need to know the video aspect ratio? Can you get it from asset? 
-        Where is 
+        
 - [ ] AVPlayerView / VideoPlayer In line / mini player (embedded inline)
      https://developer.apple.com/documentation/avkit/playing_video_content_in_a_standard_user_interface
      https://developer.apple.com/videos/play/wwdc2019/503/
@@ -191,7 +194,7 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
 - [x] Subtitles ("free" with standard player)
     - [x] Supports multiple subtitle tracks
     - [x] Repsonds to MediaAccessibility API in settings
-    - [x] Does not fully support [EBU-TT-D positions](EBUTDD_PositionalSubtitles.md) /Users/walkee28/Developer/PlaybackInSwiftUI/PlaybackInSwiftUI/Doc/EBUTDD_PositionalSubtitles.md
+    - [x] Does not fully support [EBU-TT-D positions](EBUTDD_PositionalSubtitles.md)
 - [x] Playback rate ("free" with standard player on iOS 16)
     - [x] gets reset to x1 at live edge automatically 
 - [x] Gravity ("free" with standard player has UI button)
