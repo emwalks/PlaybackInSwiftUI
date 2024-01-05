@@ -71,6 +71,8 @@ https://www.avanderlee.com/swiftui/sfsafariviewcontroller-open-webpages-in-app/?
 
 -> check out how to make a reusable UIKit bridge
 
+https://technology.mlblogs.com/leveraging-swiftui-for-video-playback-in-ios-part-1-of-2-e1133caa4e1c
+
 # Hook into Native Experience
 
 - Control Center 

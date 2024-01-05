@@ -13,6 +13,12 @@ Points to note:
 - Minimum Deployment Target iOS / iPadOS 15.6
 - Xcode 14.1 +
 
+## Benefits of SwiftUI for Playback?
+
+- Is there a reduction in code size over what would be typical in an equivalent UIKit implementation.
+- Is there a performance benefit?
+- Are there user facing benefits? 
+
 ## About Me
 
 I'm a mobile software developer with a passion for audio and video streaming! I work across iOS and Android platforms, building frameworks used for audiovisual playback in BBC native mobile apps. 
