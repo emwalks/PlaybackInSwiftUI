@@ -84,8 +84,6 @@ playerItem.externalMetadata = [titleItem, subtitleItem, infoItem]
 - As of iOS 16 interstitials are now supported in AVPlayerViewController
 -  Interstitials, either in the stream or defined locally through AVPlayerInterstitialEvents, will now be marked along the timeline. When the timeline hits a marker, we'll begin playing the interstitial. If your interstitials are already fully defined within your HLS playlist, you'll get this behavior automatically– no adoption required. If not, or if you app requires some more custom behavior, we're introducing some new API as well. 
 
-- 
-
 
 ```swift
 // Creating a skip button for a preroll ad
@@ -120,8 +118,6 @@ https://developer.apple.com/videos/play/wwdc2021/10140
 
 Both AVPlayerView and AVPlayerViewController can now optionally show a playback speed menu using some new API we've added.
 
-
-
 ```swift
 // Setting custom playback speeds
 
@@ -139,7 +135,7 @@ player.speeds.append(newSpeed)
 
 ```
 
-always call AVPlayer play() to begin playback. Never start playback by calling setRate:1.0, as the selected rate might not be 1.0
+Always call AVPlayer play() to begin playback. Never start playback by calling setRate:1.0, as the selected rate might not be 1.0
 
 ## What you get with AVPlayerViewController
 

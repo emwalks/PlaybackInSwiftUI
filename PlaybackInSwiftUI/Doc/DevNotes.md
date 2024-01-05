@@ -156,32 +156,36 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
 
 - [x] VideoPlayer Full Screen (based on current orientation)
 - [x] VideoPlayer Full screen force landscape
-- [x] Vertical / Portrait VideoPlayer
+- [x] VideoPlayer Vertical / Portrait 
     - [x] Tried https://stackoverflow.com/questions/73992868/swiftui-how-to-resize-a-video-to-fill-all-vertical-iphone-while-maintaining-a but need to try generalise - do you need to know the video aspect ratio? Can you get it from asset? 
         This is super gross - can't see full AVPlayer controls. See VideoPlayerPortraitView.swift
-- [x] Video Player Embedded
-    - [ ] Is it possible to add a observer/listener to update the native controls as well as additional controls>
-- [x] AVPlayer Player Full Screen (based on current orientation)
-- [x] AVPlayer Full screen force landscape
-- [ ] AVPlayer Embedded to Fullscreen 
+- [x] VideoPlayer Embedded
+    - [ ] Is it possible to add a observer/listener to update the native controls as well as additional controls?
+- [ ] VideoPlayer 
+- [x] AVPlayerView Player Full Screen (based on current orientation)
+- [x] AVPlayerView Full screen force landscape
+- [ ] AVPlayerView Embedded to Fullscreen 
     https://github.com/adamzarn/AZVideoPlayer
-- [x] Vertical / Portrait Video AVPlayer
+- [x] AVPlayerView Vertical / Portrait Video 
     - [x] Try https://stackoverflow.com/questions/73992868/swiftui-how-to-resize-a-video-to-fill-all-vertical-iphone-while-maintaining-a but need to try generalise - do you need to know the video aspect ratio? Can you get it from asset? 
         Where is 
-- [ ] In line / mini player (embedded inline)
+- [ ] AVPlayerView / VideoPlayer In line / mini player (embedded inline)
      https://developer.apple.com/documentation/avkit/playing_video_content_in_a_standard_user_interface
      https://developer.apple.com/videos/play/wwdc2019/503/
-- [ ] Swipe to floating mini player
+- [ ] AVPlayerView / VideoPlayer Swipe to floating mini player
 - [x] PiP (has to be AVPlayerVC)
     - [ ] Changing the PiP controlls
 - [x] Airplay ("free" with standard player?)
-- [ ] HDMI/ Bluetooth/ Peripherals
+- [ ] HDMI / Bluetooth/ Peripherals
 - [ ] Chromecast
 - [x] Multitasking - split view / scroll over
     - [ ] Working but need to check audio session mixing options? Works on real device for PiP
     - [ ] nice fade in/out not jarring to audience
 - [ ] Custom UI
-- [ ] Subtitles -> Might have EBU-TT-D support?? 
+- [x] Subtitles ("free" with standard player)
+    - [x] Supports multiple subtitle tracks
+    - [x] Repsonds to MediaAccessibility API in settings
+    - [x] Does not fully support EBU-TT-D positions
 - [x] Playback rate ("free" with standard player on iOS 16)
     - [x] gets reset to x1 at live edge automatically 
 - [x] Gravity ("free" with standard player has UI button)
@@ -194,13 +198,15 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
 - [ ] Audio (prob makes sense to do it from mini player)
 - [ ] Placeholder image for audio
 - [ ] Hooking into the native control center 
-    - [x] Checked with AVPlayerVC ("free" with standard player" - lock screen yes, control center yes,)
-    - [ ] Checked with VideoPlayer 
+    - [x] Checked with AVPlayerVC ("free" with standard player - lock screen yes, control center yes)
+    - [x] Checked with VideoPlayer ("free" with standard player - lock screen yes, control center yes)
     - [ ] Putting in a holding image for playback here? 
 - [ ] DRM with Fairplay?
     - [ ] Not backing up to iCloud
-- [ ] Audio ducking/interruption behaviour (ducking with playback .default/.moviePlayback, pause rather than duck with playback .spokenAudio) 
-- [ ] Multi audio track support ("free" with standard player)
+- [ ] Audio ducking/interruption behaviour ( depends on AVAudioSession options ducking with playback .default/.moviePlayback, pause rather than duck with playback .spokenAudio) 
+    - [ ] Checked with AVPlayerVC 
+    - [ ] Checked with VideoPlayer 
+- [ ] Multi Audio track support ("free" with standard player)
 - [ ] Media Accessibility Subtitle Support ("free" with standard player)
 - [ ] Responding to media services were reset notification
     - [ ] Why might you care for video? Your PiP behaviour requires the AVAudio Session
@@ -210,10 +216,10 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
 - [ ] Thumbnail Scrubbing
 - [ ] No live rewind
 - [ ] Audio ducking
-- [ ] Accessibility of the standard AV player / VideoPlayer? 
+- [ ] Accessibility of the standard AVPlayerVC / VideoPlayer? 
 - [ ] Presenting Navigation Markers 
         https://developer.apple.com/documentation/avkit/presenting_navigation_markers
-- [ ] Working with Interstitial Content/ Ad insertion
+- [ ] Working with Interstitial Content / Ad insertion
         https://developer.apple.com/documentation/avkit/working_with_interstitial_content
 - [ ] I need to do some research on SwiftUI View lifecycle, updates, and e.g. passing player from embedded to fullscreen and back maintaining continuity of playback
 - [ ] Using info.plist rather than storyboard for launch screen
