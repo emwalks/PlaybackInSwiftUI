@@ -216,4 +216,5 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
 - [ ] Working with Interstitial Content/ Ad insertion
         https://developer.apple.com/documentation/avkit/working_with_interstitial_content
 - [ ] I need to do some research on SwiftUI View lifecycle, updates, and e.g. passing player from embedded to fullscreen and back maintaining continuity of playback
+- [ ] Using info.plist rather than storyboard for launch screen
 
