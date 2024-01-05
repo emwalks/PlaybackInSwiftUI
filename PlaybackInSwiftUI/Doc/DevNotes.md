@@ -154,6 +154,9 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
 
 # User Experiences Examples To Demo
 
+- [x] iOS 16 Standard Media Player UI updates
+- [x] iOS 17 Standard Media Player UI updates
+        [iOS16_iOS17_SystemMediaPlayers_updates.md](./iOS16_iOS17_SystemMediaPlayers_updates.md)
 - [x] VideoPlayer Full Screen (based on current orientation)
 - [x] VideoPlayer Full screen force landscape
 - [x] VideoPlayer Vertical / Portrait 
