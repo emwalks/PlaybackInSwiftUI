@@ -161,7 +161,8 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
         This is super gross - can't see full AVPlayer controls. See VideoPlayerPortraitView.swift
 - [x] VideoPlayer Embedded
     - [ ] Is it possible to add a observer/listener to update the native controls as well as additional controls?
-- [ ] VideoPlayer 
+- [ ] VideoPlayer add image over player view
+    https://www.hackingwithswift.com/quick-start/swiftui/how-to-play-movies-with-videoplayer
 - [x] AVPlayerView Player Full Screen (based on current orientation)
 - [x] AVPlayerView Full screen force landscape
 - [ ] AVPlayerView Embedded to Fullscreen 
@@ -185,7 +186,7 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
 - [x] Subtitles ("free" with standard player)
     - [x] Supports multiple subtitle tracks
     - [x] Repsonds to MediaAccessibility API in settings
-    - [x] Does not fully support EBU-TT-D positions
+    - [x] Does not fully support [EBU-TT-D positions](EBUTDD_PositionalSubtitles.md) /Users/walkee28/Developer/PlaybackInSwiftUI/PlaybackInSwiftUI/Doc/EBUTDD_PositionalSubtitles.md
 - [x] Playback rate ("free" with standard player on iOS 16)
     - [x] gets reset to x1 at live edge automatically 
 - [x] Gravity ("free" with standard player has UI button)
