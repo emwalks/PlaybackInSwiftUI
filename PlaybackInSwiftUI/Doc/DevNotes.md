@@ -210,8 +210,6 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
 - [ ] Audio ducking/interruption behaviour ( depends on AVAudioSession options ducking with playback .default/.moviePlayback, pause rather than duck with playback .spokenAudio) 
     - [ ] Checked with AVPlayerVC 
     - [ ] Checked with VideoPlayer 
-- [ ] Multi Audio track support ("free" with standard player)
-- [ ] Media Accessibility Subtitle Support ("free" with standard player)
 - [ ] Responding to media services were reset notification
     - [ ] Why might you care for video? Your PiP behaviour requires the AVAudio Session
     - [ ] Make sure you only play following a CTA!!
@@ -221,6 +219,11 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
 - [ ] No live rewind
 - [ ] Audio ducking
 - [ ] Accessibility of the standard AVPlayerVC / VideoPlayer? 
+    - [x] for pre-iOS 16 where the standard player has Chrome UI - responds to "Reduce Transparency" by becoming more opaque
+    - [ ] Need to check VoiceOver experience
+    - [ ] Need to check reponse to keyboard / inputs
+    - [x] Multi Audio track support ("free" with standard player)
+    - [x] Media Accessibility Subtitle Support ("free" with standard player)
 - [ ] Presenting Navigation Markers 
         https://developer.apple.com/documentation/avkit/presenting_navigation_markers
 - [ ] Working with Interstitial Content / Ad insertion

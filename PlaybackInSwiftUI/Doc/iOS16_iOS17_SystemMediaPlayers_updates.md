@@ -145,7 +145,7 @@ Always call AVPlayer play() to begin playback. Never start playback by calling s
 
 # iOS 17.2 System Media Players Update
 
-I notice as of 17.2 at least (possibly before but not in 16.1) you get an additional controls menu for each individual item (playback speed, languages, subtitles) and with live content when you seek behind the live edge you get a seek to live edge CTA  😍
+I notice as of 17.2 at least (possibly before but not in 16.1) you get an additional controls/ context menu for each individual item (playback speed, languages, subtitles) and with live content when you seek behind the live edge you get a seek to live edge CTA  😍
 
 ### iOS 17.2
 <img src="../Local Media/DocumentationMedia/iOS17.2_NewAdditionalControls.png"/> 
