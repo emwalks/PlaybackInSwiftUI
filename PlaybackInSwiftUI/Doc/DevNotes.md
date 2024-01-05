@@ -125,6 +125,33 @@ https://creatomate.com/blog/how-to-make-a-gif-from-a-video-using-ffmpeg
 
 https://rdmedia.bbc.co.uk/testcard/simulcast/
 
+# Accessibility in Swift UI
+
+- [ ] Substitles
+- [ ] Hooking into user settings for subs and captions
+- [ ] Stnadard Player VoiceOver experience (subs button missing iOS 15? )
+- [ ] Increase contrast? 
+- [ ] Reduce transparancy? On the pre iOS 16 chrome standard player UI responds to this
+
+## Reduce transparency feature on iOS 
+
+- Settings > Accessibility > Display & Text Size
+- it's common for folks with low vision to use the visual accommodation settings on the platform.
+- On iOS standard UIKit framework views and controls come with display accommodations included for free - so users personalisation settings are supported out of the box.
+- If you're using custom views you need to enure display accommodations are supported utilising `isReduceTransparencyEnabled` 
+
+- Design: Include design variations for transparent and opaque backgrounds on UI elements.
+- Development: Determine if the user has enabled "Reduce Transparency" by checking the state of `UIAccessibilityIsReduceTransparencyEnabled()`. Update the UI accordingly.
+- Development: Determine if the user has adjusted the "Reduce Transparency" setting whilst using the app by listening for a notification from `UIAccessibilityReduceTransparencyStatusDidChange`. Update the UI accordingly.
+
+Resources: Check swiftUI equivalence? 
+https://support.apple.com/en-uz/guide/iphone/iph3e2e1fb0/ios#:~:text=easier%20to%20see.-,Go%20to%20Settings%20%3E%20Accessibility%20%3E%20Display%20%26%20Text%20Size.,Turn%20on%20Reduce%20Transparency.
+
+https://developer.apple.com/documentation/uikit/uiaccessibility/1615074-isreducetransparencyenabled
+
+Note there isn't an equivalent for Android, so its be a case of exceeding baseline colour contrast guidance there.
+
+
 # User Experiences Examples To Demo
 
 - [x] Video Player Full Screen (based on current orientation)
@@ -133,8 +160,11 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
     - [ ] Is it possible to add a observer/listener to update the native controls as well as additional controls>
 - [x] AVPlayer Player Full Screen (based on current orientation)
 - [x] AVPlayer Full screen force landscape
-- [ ] AVPlayer Embedded
+- [ ] AVPlayer Embedded to Fullscreen 
+    https://github.com/adamzarn/AZVideoPlayer
 - [x] Vertical / Portrait Video (has to be AVPlayer)
+    - [ ] Try https://stackoverflow.com/questions/73992868/swiftui-how-to-resize-a-video-to-fill-all-vertical-iphone-while-maintaining-a but need to try generalise - do you need to know the video aspect ratio? Can you get it from asset? 
+        Where is 
 - [ ] In line / mini player (embedded inline)
      https://developer.apple.com/documentation/avkit/playing_video_content_in_a_standard_user_interface
      https://developer.apple.com/videos/play/wwdc2019/503/
@@ -176,7 +206,10 @@ https://rdmedia.bbc.co.uk/testcard/simulcast/
 - [ ] Changing  Network Behaviour of AVPlayer
 - [ ] Thumbnail Scrubbing
 - [ ] No live rewind
-- [ ] Ad insertion / interstitials
 - [ ] Audio ducking
 - [ ] Accessibility of the standard AV player / VideoPlayer? 
+- [ ] Presenting Navigation Markers 
+        https://developer.apple.com/documentation/avkit/presenting_navigation_markers
+- [ ] Working with Interstitial Content/ Ad insertion
+        https://developer.apple.com/documentation/avkit/working_with_interstitial_content
 
