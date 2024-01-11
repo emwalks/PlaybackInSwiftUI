@@ -166,6 +166,7 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
         This is super gross - can't see full AVPlayer controls. See VideoPlayerPortraitView.swift
 - [x] VideoPlayer Embedded
     - [ ] Is it possible to add a observer/listener to update the native controls as well as additional controls?
+        https://developer.apple.com/documentation/avfoundation/avplayer/1385829-addperiodictimeobserver
 - [ ] VideoPlayer add image over player view
     https://www.hackingwithswift.com/quick-start/swiftui/how-to-play-movies-with-videoplayer
 - [x] AVPlayerView Player Full Screen (based on current orientation)
@@ -175,6 +176,7 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
      https://stackoverflow.com/questions/67824702/how-to-go-full-screen-with-videoplayer-in-swiftui
      https://developer.apple.com/forums/thread/131762
      https://technology.mlblogs.com/leveraging-swiftui-for-video-playback-in-ios-part-1-of-2-e1133caa4e1c
+     https://developer.apple.com/documentation/avfoundation/avplayer/1385829-addperiodictimeobserver
 - [x] AVPlayerView Vertical / Portrait Video 
     - [x] Try https://stackoverflow.com/questions/73992868/swiftui-how-to-resize-a-video-to-fill-all-vertical-iphone-while-maintaining-a but need to try generalise - do you need to know the video aspect ratio? Can you get it from asset? 
         
