@@ -167,6 +167,7 @@ Note there isn't an equivalent for Android, so its be a case of exceeding baseli
 - [x] VideoPlayer Embedded
     - [ ] Is it possible to add a observer/listener to update the native controls as well as additional controls?
         https://developer.apple.com/documentation/avfoundation/avplayer/1385829-addperiodictimeobserver
+        https://developer.apple.com/documentation/avfoundation/media_playback/monitoring_playback_progress_in_your_app
 - [ ] VideoPlayer add image over player view
     https://www.hackingwithswift.com/quick-start/swiftui/how-to-play-movies-with-videoplayer
 - [x] AVPlayerView Player Full Screen (based on current orientation)
