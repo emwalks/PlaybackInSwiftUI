@@ -11,6 +11,8 @@ iOS 16 rewrite of standard AVPlayers https://developer.apple.com/videos/play/wwd
 
 https://developer.apple.com/streaming/examples/
 
+https://hypercritical.co/2022/02/15/streaming-apps
+
 https://devstreaming-cdn.apple.com/videos/streaming/examples/historic_planet_content_2023-10-26-3d-video/main.m3u8
 
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8
